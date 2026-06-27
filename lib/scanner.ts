@@ -1,4 +1,4 @@
-// ARL Radar — the deterministic scoring engine.
+// Reclause — the deterministic scoring engine.
 //
 // LIABILITY-CRITICAL DESIGN: every status here is decided by pure rule-matching against
 // the business's own self-reported answers. No LLM, no probability, no "compliance"
@@ -122,7 +122,7 @@ function assertClean(findings: Finding[], extra: string[]): void {
     const banned = containsBannedAssertion(s);
     if (banned) {
       throw new Error(
-        `ARL Radar invariant violated: emitted text contains banned assertion "${banned}"`,
+        `Reclause invariant violated: emitted text contains banned assertion "${banned}"`,
       );
     }
   }

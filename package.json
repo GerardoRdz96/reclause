@@ -1,9 +1,9 @@
 {
-  "name": "arl-radar",
+  "name": "reclause",
   "version": "0.1.0",
   "private": true,
   "license": "MIT",
-  "description": "ARL Radar — a free, educational US auto-renewal-law (ARL) gap scanner. Not legal advice.",
+  "description": "Reclause — a free, educational US subscription auto-renewal-law gap scanner. Not legal advice.",
   "type": "module",
   "scripts": {
     "test": "vitest run",

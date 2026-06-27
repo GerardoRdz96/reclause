@@ -1,4 +1,4 @@
-// ARL Radar — core types.
+// Reclause — core types.
 // Design rule (liability-critical): the SCORING path is 100% deterministic rule-matching.
 // No LLM ever decides a finding's status. An LLM may only phrase an *already-decided*
 // finding into plainer English downstream — never determine compliance.

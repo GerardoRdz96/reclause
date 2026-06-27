@@ -9,7 +9,9 @@ export const metadata: Metadata = {
 };
 
 export default function StatesIndex() {
-  const states = DATASET.filter((s) => s.code !== "FED");
+  const states = DATASET.filter((s) => s.code !== "FED").sort((a, b) =>
+    a.state.localeCompare(b.state),
+  );
   const federal = DATASET.find((s) => s.code === "FED");
 
   return (
@@ -18,40 +20,54 @@ export default function StatesIndex() {
         <Link href="/" className="backlink">
           ← Home
         </Link>
-        <h1 style={{ marginTop: 16 }}>US auto-renewal laws by state</h1>
-        <p className="prose">
-          A plain-language, cited reference to each state’s subscription auto-renewal / negative-option
-          requirements. Open and free. This is educational information, not legal advice — every entry
-          links to its statute so you can read the primary source.
+
+        <h1 className="h1-serif" style={{ marginTop: 16, maxWidth: "20ch" }}>
+          US auto-renewal laws, state by state
+        </h1>
+        <p className="lead prose" style={{ marginTop: 16 }}>
+          A plain-English, cited reference to each state&rsquo;s subscription auto-renewal rules.
+          Open the entry you care about to read what the law requires, with a link to the statute so
+          you can check the source yourself. This is educational information, not legal advice.
         </p>
 
-        <div className="states-list">
+        <div className="state-grid" style={{ marginTop: 40 }}>
           {states.map((s) => (
-            <Link href={`/states/${s.code.toLowerCase()}`} key={s.code} className="state-card">
-              <div className="sc-name">
-                {s.state} <span className="sc-code">{s.code}</span>
-              </div>
-              <div className="sc-meta">
-                {s.requirements.length} requirement{s.requirements.length === 1 ? "" : "s"} · last
-                reviewed {s.last_reviewed}
+            <Link
+              href={`/states/${s.code.toLowerCase()}`}
+              key={s.code}
+              className="state-card"
+            >
+              <div className="code mono">{s.code}</div>
+              <div className="name">{s.state}</div>
+              <div className="meta mono">
+                {s.requirements.length} requirement{s.requirements.length === 1 ? "" : "s"}
               </div>
             </Link>
           ))}
+
+          {federal && (
+            <Link
+              href={`/states/${federal.code.toLowerCase()}`}
+              key={federal.code}
+              className="state-card"
+            >
+              <div className="code mono">FED</div>
+              <div className="name">{federal.state}</div>
+              <div className="meta mono">federal context</div>
+            </Link>
+          )}
         </div>
 
-        {federal && (
-          <>
-            <h2 style={{ marginTop: 48 }}>Federal context</h2>
-            <Link href={`/states/${federal.code.toLowerCase()}`} className="state-card" style={{ maxWidth: 360 }}>
-              <div className="sc-name">{federal.state}</div>
-              <div className="sc-meta">{federal.caveats.slice(0, 90)}…</div>
-            </Link>
-          </>
-        )}
+        <p className="small muted" style={{ marginTop: 28, maxWidth: "62ch" }}>
+          Two more states, <span className="mono">IL</span> and <span className="mono">MD</span>, are
+          intentionally held back while we verify their requirements against the primary sources.
+          We&rsquo;d rather leave them out than publish something we haven&rsquo;t confirmed.
+        </p>
 
-        <div className="callout" style={{ marginTop: 40 }}>
-          <strong>Want to know which of these apply to you?</strong>{" "}
-          <Link href="/scan">Run the free scan →</Link>
+        <div style={{ marginTop: 40 }}>
+          <Link href="/scan" className="btn btn-primary">
+            Run the free scan →
+          </Link>
         </div>
       </div>
     </div>

@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { DATASET } from "../lib/dataset";
 
-const BASE = "https://arl-radar.penguinalley.com";
+const BASE = "https://reclause.penguinalley.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const stateRoutes = DATASET.map((s) => ({
@@ -14,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/scan`, changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE}/states`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE}/about`, changeFrequency: "yearly", priority: 0.5 },
+    { url: `${BASE}/disclaimer`, changeFrequency: "yearly", priority: 0.3 },
     ...stateRoutes,
   ];
 }

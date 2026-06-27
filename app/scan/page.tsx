@@ -18,6 +18,36 @@ const COVERED = DATASET.filter((s) => s.code !== "FED").map((s) => ({
 
 type Step = 0 | 1 | 2 | 3; // states, nature, practices, results
 
+/* --- small line icons (single stroke, no emoji) --- */
+function LockIcon({ size = 14 }: { size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <rect x="4" y="11" width="16" height="9" rx="2" />
+      <path d="M8 11V8a4 4 0 0 1 8 0v3" />
+    </svg>
+  );
+}
+function InfoIcon({ size = 18 }: { size?: number }) {
+  return (
+    <svg className="ico" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <circle cx="12" cy="12" r="9" />
+      <path d="M12 11v5" />
+      <path d="M12 8h.01" />
+    </svg>
+  );
+}
+function StatusIcon({ status, size = 13 }: { status: Finding["status"]; size?: number }) {
+  const common = { width: size, height: size, viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: 1.7, strokeLinecap: "round" as const, strokeLinejoin: "round" as const, "aria-hidden": true };
+  if (status === "likely_addressed") {
+    return (<svg {...common}><path d="M20 6 9 17l-5-5" /></svg>);
+  }
+  if (status === "review") {
+    return (<svg {...common}><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z" /><circle cx="12" cy="12" r="2.5" /></svg>);
+  }
+  // potential_gap — outline triangle (caution, never a filled red alert)
+  return (<svg {...common}><path d="M12 4 2.5 20h19L12 4Z" /><path d="M12 10v4" /><path d="M12 17h.01" /></svg>);
+}
+
 export default function ScanPage() {
   const [step, setStep] = useState<Step>(0);
   const [profile, setProfile] = useState<BusinessProfile>(emptyProfile());
@@ -54,160 +84,198 @@ export default function ScanPage() {
   const canAdvanceStates = profile.statesServed.length > 0;
   const allNatureAnswered = NATURE_QUESTIONS.every((q) => natureAnswered[q.key]);
 
+  const reassure = (
+    <p className="wizard__reassure">
+      <LockIcon />
+      Your answers stay in your browser. Nothing is sent to a server.
+    </p>
+  );
+
   return (
-    <div className="scan-shell">
-      <div className="wrap" style={{ maxWidth: 760 }}>
-        <p className="small muted" style={{ marginBottom: 4 }}>
-          Step {Math.min(step + 1, 4)} of 4
-        </p>
-        <div className="progress" aria-hidden="true">
-          <div className="progress-bar" style={{ width: `${pct}%` }} />
-        </div>
+    <section className="section">
+      <div className="wrap">
+        {step < 3 && (
+          <div className="wizard reveal">
+            <div className="wizard__bar" aria-hidden="true">
+              <span style={{ width: `${pct}%` }} />
+            </div>
+            <p className="wizard__step">Step {Math.min(step + 1, 4)} of 4</p>
 
-        {step === 0 && (
-          <section aria-labelledby="states-h">
-            <h2 id="states-h">Which states do you have customers in?</h2>
-            <p className="muted">
-              Pick the states where you sign up paying subscribers. We currently cover these
-              high-enforcement states; more are being added.
-            </p>
-            <div className="state-grid" role="group" aria-label="States served">
-              {COVERED.map((s) => {
-                const on = profile.statesServed.includes(s.code);
-                return (
+            {step === 0 && (
+              <div aria-labelledby="states-h">
+                <h2 className="wizard__q" id="states-h">
+                  Which states do you have customers in?
+                </h2>
+                <p className="small muted" style={{ marginTop: "-8px", marginBottom: 18 }}>
+                  Pick the states where you sign up paying subscribers. We currently cover
+                  these high-enforcement states. More are being added.
+                </p>
+                <div className="state-grid" role="group" aria-label="States served">
+                  {COVERED.map((s) => {
+                    const on = profile.statesServed.includes(s.code);
+                    return (
+                      <button
+                        key={s.code}
+                        type="button"
+                        className="state-card"
+                        aria-pressed={on}
+                        onClick={() => toggleState(s.code)}
+                        style={
+                          on
+                            ? {
+                                textAlign: "left",
+                                borderColor: "var(--brand)",
+                                background: "#eef3fb",
+                                boxShadow: "0 0 0 1px var(--brand) inset",
+                              }
+                            : { textAlign: "left" }
+                        }
+                      >
+                        <span className="name">{s.state}</span>
+                        <span className="code">{s.code}</span>
+                      </button>
+                    );
+                  })}
+                </div>
+                <div className="wizard__nav">
+                  <Link href="/" className="btn btn-secondary">
+                    Home
+                  </Link>
                   <button
-                    key={s.code}
                     type="button"
-                    className="state-chip"
-                    aria-pressed={on}
-                    onClick={() => toggleState(s.code)}
+                    className="btn btn-primary"
+                    disabled={!canAdvanceStates}
+                    onClick={() => setStep(1)}
                   >
-                    {s.state}
-                    <span className="code">{s.code}</span>
+                    Next
                   </button>
-                );
-              })}
-            </div>
-            <div className="wizard-nav">
-              <Link href="/" className="btn btn-ghost">
-                ← Home
-              </Link>
-              <button
-                type="button"
-                className="btn btn-primary"
-                disabled={!canAdvanceStates}
-                onClick={() => setStep(1)}
-              >
-                Continue →
-              </button>
-            </div>
-          </section>
-        )}
-
-        {step === 1 && (
-          <section aria-labelledby="nature-h">
-            <h2 id="nature-h">How does your subscription work?</h2>
-            <p className="muted">These answers decide which rules apply to you.</p>
-            {NATURE_QUESTIONS.map((q) => {
-              const val = profile[q.key] as boolean;
-              const answered = !!natureAnswered[q.key];
-              return (
-                <div className="q-block" key={q.key}>
-                  <div className="q-label">{q.label}</div>
-                  {q.help && <div className="q-help">{q.help}</div>}
-                  <div className="choices" role="group" aria-label={q.label}>
-                    <button
-                      type="button"
-                      className="choice"
-                      aria-pressed={answered && val === true}
-                      onClick={() => setNature(q.key, true)}
-                    >
-                      Yes
-                    </button>
-                    <button
-                      type="button"
-                      className="choice choice-no"
-                      aria-pressed={answered && val === false}
-                      onClick={() => setNature(q.key, false)}
-                    >
-                      No
-                    </button>
-                  </div>
                 </div>
-              );
-            })}
-            <div className="wizard-nav">
-              <button type="button" className="btn btn-ghost" onClick={() => setStep(0)}>
-                ← Back
-              </button>
-              <button
-                type="button"
-                className="btn btn-primary"
-                disabled={!allNatureAnswered}
-                onClick={() => setStep(2)}
-                title={allNatureAnswered ? "" : "Please answer each question"}
-              >
-                Continue →
-              </button>
-            </div>
-          </section>
-        )}
+                {reassure}
+              </div>
+            )}
 
-        {step === 2 && (
-          <section aria-labelledby="practice-h">
-            <h2 id="practice-h">What does your flow already do?</h2>
-            <p className="muted">
-              Answer honestly — “Not sure” is a perfectly good answer and we’ll flag it for review
-              rather than guess.
-            </p>
-            {PRACTICE_QUESTIONS.map((q) => {
-              const val = profile[q.key] as Tri;
-              return (
-                <div className="q-block" key={q.key}>
-                  <div className="q-label">{q.label}</div>
-                  <div className="choices" role="group" aria-label={q.label}>
-                    <button
-                      type="button"
-                      className="choice"
-                      aria-pressed={val === true}
-                      onClick={() => setPractice(q.key, true)}
-                    >
-                      Yes
-                    </button>
-                    <button
-                      type="button"
-                      className="choice choice-no"
-                      aria-pressed={val === false}
-                      onClick={() => setPractice(q.key, false)}
-                    >
-                      No
-                    </button>
-                    <button
-                      type="button"
-                      className="choice choice-unsure"
-                      aria-pressed={val === "unsure"}
-                      onClick={() => setPractice(q.key, "unsure")}
-                    >
-                      Not sure
-                    </button>
-                  </div>
+            {step === 1 && (
+              <div aria-labelledby="nature-h">
+                <p className="eyebrow" id="nature-h">How your subscription works</p>
+                <p className="small muted" style={{ marginTop: 6, marginBottom: 4 }}>
+                  These answers decide which rules apply to you.
+                </p>
+                {NATURE_QUESTIONS.map((q) => {
+                  const val = profile[q.key] as boolean;
+                  const answered = !!natureAnswered[q.key];
+                  return (
+                    <div key={q.key} style={{ marginTop: 26 }}>
+                      <p className="wizard__q" style={{ margin: "0 0 6px" }}>{q.label}</p>
+                      {q.help && (
+                        <p className="small muted" style={{ marginBottom: 12 }}>{q.help}</p>
+                      )}
+                      <div
+                        className="options"
+                        role="group"
+                        aria-label={q.label}
+                        style={{ gridTemplateColumns: "repeat(2, 1fr)" }}
+                      >
+                        <button
+                          type="button"
+                          className={`option${answered && val === true ? " option--active" : ""}`}
+                          aria-pressed={answered && val === true}
+                          onClick={() => setNature(q.key, true)}
+                        >
+                          Yes
+                        </button>
+                        <button
+                          type="button"
+                          className={`option${answered && val === false ? " option--active" : ""}`}
+                          aria-pressed={answered && val === false}
+                          onClick={() => setNature(q.key, false)}
+                        >
+                          No
+                        </button>
+                      </div>
+                    </div>
+                  );
+                })}
+                <div className="wizard__nav">
+                  <button type="button" className="btn btn-secondary" onClick={() => setStep(0)}>
+                    Back
+                  </button>
+                  <button
+                    type="button"
+                    className="btn btn-primary"
+                    disabled={!allNatureAnswered}
+                    onClick={() => setStep(2)}
+                    title={allNatureAnswered ? "" : "Please answer each question"}
+                  >
+                    Next
+                  </button>
                 </div>
-              );
-            })}
-            <div className="wizard-nav">
-              <button type="button" className="btn btn-ghost" onClick={() => setStep(1)}>
-                ← Back
-              </button>
-              <button type="button" className="btn btn-primary" onClick={() => setStep(3)}>
-                See my results →
-              </button>
-            </div>
-          </section>
+                {reassure}
+              </div>
+            )}
+
+            {step === 2 && (
+              <div aria-labelledby="practice-h">
+                <p className="eyebrow" id="practice-h">What your flow already does</p>
+                <p className="small muted" style={{ marginTop: 6, marginBottom: 4 }}>
+                  Answer honestly. &ldquo;Not sure&rdquo; is a good answer. We flag it for
+                  review rather than guess.
+                </p>
+                {PRACTICE_QUESTIONS.map((q) => {
+                  const val = profile[q.key] as Tri;
+                  return (
+                    <div key={q.key} style={{ marginTop: 26 }}>
+                      <p className="wizard__q" style={{ margin: "0 0 12px" }}>{q.label}</p>
+                      <div
+                        className="options"
+                        role="group"
+                        aria-label={q.label}
+                        style={{ gridTemplateColumns: "repeat(3, 1fr)" }}
+                      >
+                        <button
+                          type="button"
+                          className={`option${val === true ? " option--active" : ""}`}
+                          aria-pressed={val === true}
+                          onClick={() => setPractice(q.key, true)}
+                        >
+                          Yes
+                        </button>
+                        <button
+                          type="button"
+                          className={`option${val === false ? " option--active" : ""}`}
+                          aria-pressed={val === false}
+                          onClick={() => setPractice(q.key, false)}
+                        >
+                          No
+                        </button>
+                        <button
+                          type="button"
+                          className={`option${val === "unsure" ? " option--active" : ""}`}
+                          aria-pressed={val === "unsure"}
+                          onClick={() => setPractice(q.key, "unsure")}
+                        >
+                          Not sure
+                        </button>
+                      </div>
+                    </div>
+                  );
+                })}
+                <div className="wizard__nav">
+                  <button type="button" className="btn btn-secondary" onClick={() => setStep(1)}>
+                    Back
+                  </button>
+                  <button type="button" className="btn btn-primary" onClick={() => setStep(3)}>
+                    See my results
+                  </button>
+                </div>
+                {reassure}
+              </div>
+            )}
+          </div>
         )}
 
         {step === 3 && report && <Results report={report} onRestart={() => setStep(0)} />}
       </div>
-    </div>
+    </section>
   );
 }
 
@@ -228,102 +296,139 @@ function Results({ report, onRestart }: { report: GapReport; onRestart: () => vo
   }, [report]);
 
   const s = report.summary;
+  const gapWord = s.potentialGaps === 1 ? "gap" : "gaps";
+  const stateWord = s.statesWithPotentialGaps === 1 ? "state" : "states";
+
+  // Cumulative index so the reveal staggers across every finding card in order.
+  let running = 0;
+  const blocks = byState.map(([code, e]) => {
+    const base = running;
+    running += e.findings.length;
+    return { code, name: e.name, findings: e.findings, base };
+  });
 
   return (
-    <section aria-labelledby="results-h">
-      <div className="result-head">
-        <h2 id="results-h">Your ARL Radar snapshot</h2>
-        <p style={{ color: "#dbe2f0", marginBottom: 0 }}>
-          Based only on your answers across {report.statesEvaluated.length} state
-          {report.statesEvaluated.length === 1 ? "" : "s"}. This is informational, not a legal
-          conclusion.
+    <div aria-labelledby="results-h">
+      <div className="scorecard reveal">
+        <p className="eyebrow" id="results-h" style={{ display: "block", marginBottom: 12 }}>
+          Your snapshot
         </p>
-        <div className="score-row">
-          <div className="score-pill">
-            <span className="n">{s.potentialGaps}</span>
-            <span className="l">potential gaps</span>
-          </div>
-          <div className="score-pill">
-            <span className="n">{s.review}</span>
-            <span className="l">to review</span>
-          </div>
-          <div className="score-pill">
-            <span className="n">{s.likelyAddressed}</span>
-            <span className="l">self-reported as done</span>
-          </div>
-          <div className="score-pill">
-            <span className="n">{s.statesWithPotentialGaps}</span>
-            <span className="l">states with gaps</span>
-          </div>
+        <p className="scorecard__count">
+          <b>{s.potentialGaps}</b> potential {gapWord} across <b>{s.statesWithPotentialGaps}</b> {stateWord}
+        </p>
+        <p className="small muted" style={{ marginTop: 8 }}>
+          Based only on your answers across {report.statesEvaluated.length} state
+          {report.statesEvaluated.length === 1 ? "" : "s"}. This is informational, not a
+          legal conclusion.
+        </p>
+        <div className="scorecard__pills">
+          <span className="pill pill--gap">
+            <StatusIcon status="potential_gap" /> {s.potentialGaps} potential
+          </span>
+          <span className="pill pill--review">
+            <StatusIcon status="review" /> {s.review} to review
+          </span>
+          <span className="pill pill--ok">
+            <StatusIcon status="likely_addressed" /> {s.likelyAddressed} reported done
+          </span>
         </div>
       </div>
 
-      <div className="callout" style={{ marginBottom: 24 }}>
-        <strong>Read this first.</strong> {report.disclaimer}
+      <div className="disclaimer-inset reveal" style={{ marginTop: 28 }}>
+        <InfoIcon />
+        <span>
+          <strong>Read this first.</strong> {report.disclaimer}{" "}
+          <Link href="/methodology" className="backlink">How this works</Link>.
+        </span>
       </div>
 
       {report.statesNotCovered.length > 0 && (
-        <p className="small muted">
-          Not yet in our dataset (so not evaluated): {report.statesNotCovered.join(", ")}.
+        <p className="small muted" style={{ marginTop: 16 }}>
+          Not yet in our dataset, so not evaluated: {report.statesNotCovered.join(", ")}.
         </p>
       )}
 
-      {byState.length === 0 && (
-        <div className="card">
+      {blocks.length === 0 && (
+        <div className="card" style={{ marginTop: 28 }}>
           <p>
-            Nothing to evaluate from your answers — most likely because your business doesn’t
-            auto-renew, isn’t consumer-facing, or you didn’t select a covered state. If that’s
-            wrong, <button className="linklike" onClick={onRestart}>start over</button>.
+            There is nothing to evaluate from your answers. That usually means your
+            business does not auto-renew, is not consumer-facing, or you did not select a
+            covered state. If that is not right,{" "}
+            <button className="btn btn-ghost" style={{ padding: 0 }} onClick={onRestart}>
+              start over
+            </button>
+            .
           </p>
         </div>
       )}
 
-      {byState.map(([code, e]) => (
+      {blocks.map(({ code, name, findings, base }) => (
         <div className="state-block" key={code}>
-          <h3>
-            {e.name} <span className="muted small">({code})</span>
-          </h3>
-          {e.findings.map((f, i) => (
-            <div className={`finding ${f.status}`} key={`${code}-${f.category}-${i}`}>
-              <div className="finding-top">
-                <span className="muted small">{labelForCategory(f.category)}</span>
-                <span className={`status-tag ${f.status}`}>{statusLabel(f.status)}</span>
-              </div>
-              <p className="req">{f.requirement_text}</p>
-              <p className="why">{f.why}</p>
-              <span className="cite">
-                {f.statute_ref} ·{" "}
-                <a href={f.source_url} target="_blank" rel="noopener noreferrer">
-                  source
-                </a>
-              </span>
-            </div>
-          ))}
+          <div className="state-block__head">
+            <h2 className="h3" style={{ margin: 0 }}>{name}</h2>
+            <span className="mono small muted">{code}</span>
+          </div>
+          <div className="findings-list">
+            {findings.map((f, i) => {
+              const mod = statusMod(f.status);
+              return (
+                <div
+                  className={`finding finding--${mod} reveal-row`}
+                  key={`${code}-${f.category}-${i}`}
+                  style={{ animationDelay: `${(base + i) * 60}ms` }}
+                >
+                  <div style={{ display: "flex", justifyContent: "space-between", gap: "0.8rem", alignItems: "center", flexWrap: "wrap" }}>
+                    <span className="mono small muted">{labelForCategory(f.category)}</span>
+                    <span className={`pill pill--${mod}`}>
+                      <StatusIcon status={f.status} /> {statusLabel(f.status)}
+                    </span>
+                  </div>
+                  <p className="finding__req">{f.requirement_text}</p>
+                  <p className="finding__why">{f.why}</p>
+                  <div className="finding__cite">
+                    <span className="cite">{f.statute_ref}</span>
+                    <a className="cite" href={f.source_url} target="_blank" rel="noopener noreferrer">
+                      Read the statute &rarr;
+                    </a>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
         </div>
       ))}
 
-      <div className="cta-band">
-        <h2>Want help fixing your flow?</h2>
-        <p>
-          Penguin Alley offers a fixed-scope <strong>technical</strong> engagement: once you (or
-          your attorney) decide what your flow needs, we implement it — the signup, consent, and
-          cancellation-flow engineering. We build to your spec; we don’t give legal advice. Bring
-          this snapshot to your counsel, then bring the requirements to us.
+      <div className="card card--float" style={{ marginTop: 40 }}>
+        <h2 className="h3" style={{ margin: "0 0 0.5rem" }}>Found gaps you want fixed?</h2>
+        <p style={{ marginBottom: "1.2rem" }}>
+          Penguin Alley implements the technical changes you or your attorney specify. We
+          do the signup, consent, and cancellation-flow engineering. We build to your spec.
+          We do not give legal advice. Bring this snapshot to your counsel, then bring the
+          requirements to us.
         </p>
-        <div className="hero-actions">
+        <div style={{ display: "flex", flexWrap: "wrap", gap: "0.8rem", alignItems: "center" }}>
           <a
-            href="https://penguinalley.com/en/services?ref=arl-radar-results#penny"
+            href="https://penguinalley.com/en/services?ref=reclause-results#penny"
             className="btn btn-primary"
           >
-            Get a fixed-scope quote →
+            Talk to Penguin Alley
           </a>
-          <button type="button" className="btn btn-ghost" style={{ color: "#fff", borderColor: "rgba(255,255,255,0.3)" }} onClick={onRestart}>
+          <button type="button" className="btn btn-ghost" onClick={() => window.print()}>
+            Print this report
+          </button>
+          <button type="button" className="btn btn-ghost" onClick={onRestart}>
             Run it again
           </button>
         </div>
       </div>
-    </section>
+    </div>
   );
+}
+
+function statusMod(s: Finding["status"]): "gap" | "ok" | "review" {
+  if (s === "potential_gap") return "gap";
+  if (s === "likely_addressed") return "ok";
+  return "review";
 }
 
 function labelForCategory(c: Finding["category"]): string {
