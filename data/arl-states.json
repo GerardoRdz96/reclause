@@ -1,0 +1,1301 @@
+[
+  {
+    "state": "California",
+    "code": "CA",
+    "statutes": [
+      {
+        "citation": "Cal. Bus. & Prof. Code §§ 17600–17606 (Automatic Purchase Renewals)",
+        "effective": "January 1, 2010 (operative December 1, 2010 per §17606); amended multiple times thereafter",
+        "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=BPC&division=7.&title=&part=3.&chapter=1.&article=9."
+      },
+      {
+        "citation": "AB 2863 (2023–2024 Reg. Sess.), amending Cal. Bus. & Prof. Code §§ 17601 and 17602",
+        "effective": "July 1, 2025; applies to contracts entered into, amended, or extended on or after that date",
+        "source_url": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202320240AB2863"
+      }
+    ],
+    "requirements": [
+      {
+        "id": "ca-clear-conspicuous-disclosure",
+        "category": "disclosure_before_purchase",
+        "requirement_text": "Before a consumer submits billing information, a business offering automatic renewal or continuous service must present the offer terms clearly and conspicuously and in visual proximity to the request for consent. Required disclosures include: the length of the automatic renewal term or that the service continues until canceled; any minimum purchase obligation; and the cancellation policy and how to cancel.",
+        "applies_when": {
+          "always_if_auto_renew": true,
+          "online_signup": false,
+          "free_trial": false,
+          "long_term_or_annual": false,
+          "consumer_facing": true
+        },
+        "statute_ref": "Cal. Bus. & Prof. Code §17602(a)(1)–(3)",
+        "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=17602"
+      },
+      {
+        "id": "ca-billing-amount-frequency-disclosure",
+        "category": "disclosure_before_purchase",
+        "requirement_text": "Under AB 2863 (eff. July 1, 2025), before confirming a consumer's billing information, the business must disclose the amount or range of costs the consumer will be charged and, if applicable, the frequency of those charges unless the consumer takes timely steps to prevent or stop them. This disclosure must be provided in proximity to where billing information is confirmed.",
+        "applies_when": {
+          "always_if_auto_renew": true,
+          "online_signup": false,
+          "free_trial": false,
+          "long_term_or_annual": false,
+          "consumer_facing": true
+        },
+        "statute_ref": "Cal. Bus. & Prof. Code §17602(a)(8) (as amended by AB 2863)",
+        "source_url": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202320240AB2863"
+      },
+      {
+        "id": "ca-express-affirmative-consent",
+        "category": "affirmative_consent",
+        "requirement_text": "The statute requires the business to obtain express affirmative consent to the automatic renewal or continuous service offer before charging the consumer. As amended by AB 2863 (eff. July 1, 2025), consent must be specifically to the automatic renewal or continuous service offer itself, not merely to the overall agreement. The statute also prohibits including contract terms that interfere with, detract from, contradict, or otherwise undermine the consumer's ability to provide that affirmative consent.",
+        "applies_when": {
+          "always_if_auto_renew": true,
+          "online_signup": false,
+          "free_trial": false,
+          "long_term_or_annual": false,
+          "consumer_facing": true
+        },
+        "statute_ref": "Cal. Bus. & Prof. Code §17602(a)(4)–(5) (as amended by AB 2863)",
+        "source_url": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202320240AB2863"
+      },
+      {
+        "id": "ca-consent-verification-records",
+        "category": "affirmative_consent",
+        "requirement_text": "Under AB 2863 (eff. July 1, 2025), a business must maintain consent verification records for a minimum of three years or one year after termination of the automatic renewal or continuous service agreement, whichever period is longer.",
+        "applies_when": {
+          "always_if_auto_renew": true,
+          "online_signup": false,
+          "free_trial": false,
+          "long_term_or_annual": false,
+          "consumer_facing": true
+        },
+        "statute_ref": "Cal. Bus. & Prof. Code §17602(a)(6) (as amended by AB 2863)",
+        "source_url": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202320240AB2863"
+      },
+      {
+        "id": "ca-post-enrollment-acknowledgment",
+        "category": "acknowledgment_confirmation",
+        "requirement_text": "After obtaining the consumer's consent to automatic renewal or continuous service, the business must provide an acknowledgment that includes the automatic renewal offer terms, the cancellation policy, and information on how to cancel, in a manner capable of being retained by the consumer (e.g., by email). If the initial offer included a free or discounted trial period, the acknowledgment must also disclose when the trial period ends and what charges will apply thereafter.",
+        "applies_when": {
+          "always_if_auto_renew": true,
+          "online_signup": false,
+          "free_trial": false,
+          "long_term_or_annual": false,
+          "consumer_facing": true
+        },
+        "statute_ref": "Cal. Bus. & Prof. Code §17602(b)",
+        "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=17602"
+      },
+      {
+        "id": "ca-same-medium-cancellation",
+        "category": "cancellation_mechanism",
+        "requirement_text": "The statute requires a business to allow a consumer to cancel through the same method used to sign up or the medium through which the consumer customarily interacts with the business, including telephone, mail, email, or online. The business must not obstruct or delay the consumer's ability to cancel.",
+        "applies_when": {
+          "always_if_auto_renew": false,
+          "online_signup": true,
+          "free_trial": false,
+          "long_term_or_annual": false,
+          "consumer_facing": true
+        },
+        "statute_ref": "Cal. Bus. & Prof. Code §17602(c)",
+        "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=17602"
+      },
+      {
+        "id": "ca-click-to-cancel-online",
+        "category": "cancellation_mechanism",
+        "requirement_text": "Under AB 2863 (eff. July 1, 2025), for subscriptions entered into online, the business must provide a prominently located and continuously and proximately displayed direct link or button entitled 'click to cancel.' A business may present a retention offer (discount or other benefit) during cancellation only if the 'click to cancel' button simultaneously remains displayed, ensuring the consumer can complete cancellation at any time.",
+        "applies_when": {
+          "always_if_auto_renew": false,
+          "online_signup": true,
+          "free_trial": false,
+          "long_term_or_annual": false,
+          "consumer_facing": true
+        },
+        "statute_ref": "Cal. Bus. & Prof. Code §17602(c)(2)(A) (as amended by AB 2863)",
+        "source_url": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202320240AB2863"
+      },
+      {
+        "id": "ca-phone-cancellation-requirements",
+        "category": "cancellation_mechanism",
+        "requirement_text": "Under AB 2863 (eff. July 1, 2025), when telephone cancellation is offered, the business must connect the consumer promptly to a live person or voicemail during business hours. If the consumer leaves a voicemail, the business must process the cancellation or call the consumer back within one business day. The cancellation phone number must appear clearly and conspicuously on the business's website in a manner capable of being retained by the consumer.",
+        "applies_when": {
+          "always_if_auto_renew": false,
+          "online_signup": true,
+          "free_trial": false,
+          "long_term_or_annual": false,
+          "consumer_facing": true
+        },
+        "statute_ref": "Cal. Bus. & Prof. Code §17602(c)(2)(B); §17602(f) (as amended by AB 2863)",
+        "source_url": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202320240AB2863"
+      },
+      {
+        "id": "ca-annual-renewal-reminder",
+        "category": "renewal_reminder_notice",
+        "requirement_text": "Under AB 2863 (eff. July 1, 2025), for annual automatic renewal or continuous service agreements, the business must send an annual reminder to the consumer in the same medium through which the agreement was activated or the medium the consumer customarily uses to interact with the business (including telephone, mail, or email). For agreements originally entered in person or by voice, the reminder may be delivered by telephone, mail, or any internet-based communication. The reminder must disclose: (A) the product or service to which the automatic renewal or continuous service applies; (B) the frequency and amount of associated charges; and (C) the means to cancel.",
+        "applies_when": {
+          "always_if_auto_renew": true,
+          "online_signup": false,
+          "free_trial": false,
+          "long_term_or_annual": true,
+          "consumer_facing": true
+        },
+        "statute_ref": "Cal. Bus. & Prof. Code §17602(h) (added by AB 2863)",
+        "source_url": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202320240AB2863"
+      },
+      {
+        "id": "ca-free-trial-conversion-coverage",
+        "category": "free_trial_conversion_notice",
+        "requirement_text": "Under AB 2863 (eff. July 1, 2025), 'free-to-pay conversions' are expressly included within the statutory definition of 'automatic renewal plan' (§17601(6)). A free-to-pay conversion is defined as a provision under which a consumer receives a product or service for free for an initial period and will incur an obligation to pay for the product or service if they do not take affirmative action to cancel before the end of that period. All ARL requirements — including clear and conspicuous pre-purchase disclosure, express affirmative consent, post-enrollment acknowledgment containing the trial end date and charges that will apply, and a simple cancellation mechanism — apply to such offers.",
+        "applies_when": {
+          "always_if_auto_renew": true,
+          "online_signup": false,
+          "free_trial": true,
+          "long_term_or_annual": false,
+          "consumer_facing": true
+        },
+        "statute_ref": "Cal. Bus. & Prof. Code §17601(6); §17602 (as amended by AB 2863)",
+        "source_url": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202320240AB2863"
+      },
+      {
+        "id": "ca-price-change-notice",
+        "category": "price_change_notice",
+        "requirement_text": "Under §17602(g) as amended by AB 2863 (eff. July 1, 2025), a change in the fee charged to a consumer requires clear and conspicuous notice provided no less than 7 days and no more than 30 days before the new fee becomes effective. The notice must include cancellation instructions in a manner capable of being retained by the consumer.",
+        "applies_when": {
+          "always_if_auto_renew": true,
+          "online_signup": false,
+          "free_trial": false,
+          "long_term_or_annual": false,
+          "consumer_facing": true
+        },
+        "statute_ref": "Cal. Bus. & Prof. Code §17602(g) (as amended by AB 2863)",
+        "source_url": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202320240AB2863"
+      }
+    ],
+    "penalty": "Violations of the ARL are not a crime (§17604(a)). Civil remedies are available; a good-faith compliance defense is available under §17604. Primary enforcement vehicle is California's Unfair Competition Law (UCL, Bus. & Prof. Code §17200 et seq.): the AG, district attorneys, and city attorneys may obtain civil penalties up to $2,500 per violation (Bus. & Prof. Code §17206), plus restitution and injunctive relief. No direct private right of action exists under the ARL itself (Mayron v. Google LLC, Cal. Ct. App. 2022); private plaintiffs may bring UCL claims under the \"unlawfulness\" prong where they can establish economic injury caused by an ARL violation. UCL private actions allow restitution but not the $2,500-per-violation civil penalty, which is reserved for public enforcers. Sources: Cal. Bus. & Prof. Code §§ 17604–17605; §17206; Mayron v. Google LLC (2022).",
+    "enforcement_notes": "Active government enforcement by CART (California Automatic Renewal Task Force), a coalition of district attorneys' offices from Los Angeles, Santa Clara, Santa Barbara, San Diego, and Santa Cruz counties plus the Santa Monica City Attorney's Office. Notable CART actions: (1) HelloFresh — $7.5M settlement announced August 2025 (LA and Santa Clara County DAs) for alleged misleading of consumers into recurring subscription charges without adequate notice or authorization, in violation of the ARL. (DA press release: https://da.lacounty.gov/media/news/hellofresh-pay-75-million-deceptive-subscription-practices-consumer-protection-lawsuit). (2) Thrive Market — CART, April 2024, $1.1M civil penalties and costs plus $450K restitution. (3) TFG Holdings (ShoeDazzle/JustFab) — multi-state coordinated AG settlement (34 states) for negative option enrollment without consent. Private class-action wave: Following Mayron v. Google LLC (2022), which confirmed UCL unlawfulness prong remains available, a concentrated wave of putative class actions was filed post-July 2025 alleging pre-AB 2863 violations (failure to provide acknowledgment email, inadequate cancellation policy simplicity). Other notable settlements: Peacock ~$3.7M (Oct. 2024); System1/Total Security/Protected.net $2.5M (Jan. 2025). Secondary sources: Benesch Law (beneschlaw.com); Wiley Law (wiley.law).",
+    "caveats": "(1) Subdivision letter identifiers (e.g., §17602(a)(4), §17602(h), §17602(c)(2)(A)) are drawn from secondary law-firm sources — principally KTS Law (ktslaw.com) and the Privacy World blog (privacyworld.blog/2024/11/...) — because leginfo.ca.gov section pages require JavaScript to render statutory text and could not be parsed directly via HTTP. The AB 2863 enrolled bill text page was indexed but paragraph-level subdivision letters were not confirmed by direct parse. Verify each subdivision letter against the enrolled AB 2863 text or the official 2025 California Codes before production use. (2) AB 2863 applies to contracts 'entered into, amended, or extended' on or after July 1, 2025; pre-existing contracts not amended or extended since that date may remain governed by the prior statute version. (3) Cal. Bus. & Prof. Code §17605 exempts services provided by businesses regulated by the California PUC, the FCC, or FERC. (4) The statute covers 'consumers'; B2B transactions are not within scope. (5) The scope of 'material change' triggering the §17602(g) price-change notice is not defined by the statute and has not been extensively litigated under the AB 2863 amendments as of June 2026. (6) AB 2863 did not explicitly create a private right of action; the Mayron v. Google LLC holding remains the controlling authority on that question as of June 2026, though it predates the AB 2863 amendments. (7) The KTS Law client alert contained a typographical error citing §16702(a)(4) instead of §17602(a)(4); all citations in this dataset have been corrected to §17602.",
+    "last_reviewed": "2026-06-26"
+  },
+  {
+    "state": "New York",
+    "code": "NY",
+    "statutes": [
+      {
+        "citation": "N.Y. Gen. Bus. Law § 527-a (as amended eff. November 5, 2025, by Part W of the 2025-2026 NYS Transportation, Economic Development and Environmental Conservation Budget Bill, signed May 9, 2025)",
+        "effective": "2025-11-05",
+        "source_url": "https://codes.findlaw.com/ny/general-business-law/gbs-sect-527-a/"
+      },
+      {
+        "citation": "N.Y. Gen. Bus. Law § 527-a (as amended eff. December 13, 2023, adding long-term renewal reminder requirement)",
+        "effective": "2023-12-13",
+        "source_url": "https://www.consumerfinancemonitor.com/2023/12/20/new-york-enacts-new-requirements-for-subscription-auto-renewals-and-credit-card-surcharge-pricing/"
+      },
+      {
+        "citation": "N.Y. Gen. Bus. Law § 527 (definitions for Article 29-BB)",
+        "effective": "2023-12-13",
+        "source_url": "https://www.nysenate.gov/legislation/laws/GBS/527"
+      }
+    ],
+    "requirements": [
+      {
+        "id": "ny-disclosure-before-purchase",
+        "category": "disclosure_before_purchase",
+        "requirement_text": "The statute prohibits a business making an automatic renewal or continuous service offer from failing to present to the consumer, in a clear and conspicuous manner, the material terms of the offer — including a description of the product or service subject to renewal, the amount of costs that will be charged, the frequency of charges, the deadline by date or frequency by which the consumer must act to prevent or stop further charges, and the cancellation mechanisms — before consent to the offer or billing information has been requested, and in visual proximity (or, for voice offers, temporal proximity) to the request for consent. If the offer also includes a free gift or trial, or the price is temporary, the offer must include a clear and conspicuous explanation of how and when the price will change and the price or prices that will subsequently be charged.",
+        "applies_when": {
+          "always_if_auto_renew": true,
+          "online_signup": false,
+          "free_trial": false,
+          "long_term_or_annual": false,
+          "consumer_facing": true
+        },
+        "statute_ref": "N.Y. Gen. Bus. Law § 527-a(1)(a)",
+        "source_url": "https://codes.findlaw.com/ny/general-business-law/gbs-sect-527-a/"
+      },
+      {
+        "id": "ny-affirmative-consent-initial",
+        "category": "affirmative_consent",
+        "requirement_text": "The statute prohibits a business from charging the consumer or the consumer's account with a third party for the initial term of an automatic renewal or continuous service without first obtaining the consumer's affirmative consent to the agreement containing the terms of the automatic renewal or continuous service offer, including terms of an offer made at a promotional or discounted price for a limited period of time. (Added/clarified by November 5, 2025 amendment.)",
+        "applies_when": {
+          "always_if_auto_renew": true,
+          "online_signup": false,
+          "free_trial": false,
+          "long_term_or_annual": false,
+          "consumer_facing": true
+        },
+        "statute_ref": "N.Y. Gen. Bus. Law § 527-a(1)(b)",
+        "source_url": "https://codes.findlaw.com/ny/general-business-law/gbs-sect-527-a/"
+      },
+      {
+        "id": "ny-acknowledgment-confirmation",
+        "category": "acknowledgment_confirmation",
+        "requirement_text": "The statute requires a business to provide a notice promptly following the consumer's affirmative consent, in a manner capable of being retained by the consumer. The notice must include: (i) the terms of the automatic renewal or continuous service agreement; (ii) the amount of costs that will be charged; (iii) the frequency of charges; (iv) the deadline by date or frequency by which the consumer must act to prevent or stop further charges; and (v) the cancellation mechanisms described in paragraphs d and d-1.",
+        "applies_when": {
+          "always_if_auto_renew": true,
+          "online_signup": false,
+          "free_trial": false,
+          "long_term_or_annual": false,
+          "consumer_facing": true
+        },
+        "statute_ref": "N.Y. Gen. Bus. Law § 527-a(1)(c)",
+        "source_url": "https://codes.findlaw.com/ny/general-business-law/gbs-sect-527-a/"
+      },
+      {
+        "id": "ny-cancellation-mechanism",
+        "category": "cancellation_mechanism",
+        "requirement_text": "The statute requires a business to provide the consumer with the option to cancel at any time using a simple cancellation mechanism that is as easy to use as the mechanism the consumer used to provide consent and that is through the same medium the consumer used to provide consent (§ 527-a(1)(d)). The statute also requires providing the option to cancel through any other medium by which a consumer can consent to the subscription or any price increase (§ 527-a(1)(d-1)). Additionally, the statute prohibits imposing unreasonable or unlawful conditions on cancellation, refusing to acknowledge cancellation, obstructing, or unreasonably delaying a cancellation request. The statute provides examples of unreasonable conditions including hanging up on consumers who call to cancel or misrepresenting the reasons for delays. A business may present a discounted offer, retention benefit, or information about the effect of cancellation during the process, provided it does not obstruct or unreasonably delay cancellation (§ 527-a(1)(e)). (Provisions d, d-1, and e added/expanded by November 5, 2025 amendment.)",
+        "applies_when": {
+          "always_if_auto_renew": true,
+          "online_signup": false,
+          "free_trial": false,
+          "long_term_or_annual": false,
+          "consumer_facing": true
+        },
+        "statute_ref": "N.Y. Gen. Bus. Law § 527-a(1)(d), (d-1), (e)",
+        "source_url": "https://codes.findlaw.com/ny/general-business-law/gbs-sect-527-a/"
+      },
+      {
+        "id": "ny-renewal-reminder-notice",
+        "category": "renewal_reminder_notice",
+        "requirement_text": "The statute requires a business to notify a consumer of an automatic renewal or continuous service charge when the offer carries an initial paid term of one year or longer and the renewal term is six months or longer. Notice must be sent at least fifteen days before, but not more than forty-five days before, the cancellation deadline for such automatic renewal, in the manner selected by the consumer (which may include text, email, app notification, or any other notification channel offered by the business). The notice must include instructions on how to cancel. (Originally added effective December 13, 2023; carried forward in November 5, 2025 amendment.)",
+        "applies_when": {
+          "always_if_auto_renew": true,
+          "online_signup": false,
+          "free_trial": false,
+          "long_term_or_annual": true,
+          "consumer_facing": true
+        },
+        "statute_ref": "N.Y. Gen. Bus. Law § 527-a(1)(f)",
+        "source_url": "https://codes.findlaw.com/ny/general-business-law/gbs-sect-527-a/"
+      },
+      {
+        "id": "ny-free-trial-conversion-notice",
+        "category": "free_trial_conversion_notice",
+        "requirement_text": "The statute requires a business to notify a consumer of an upcoming automatic renewal or continuous service charge when the offer includes a free gift or trial period of more than one month followed by a paid period. Notice must be sent at least three days before, but not more than twenty-one days before, the cancellation deadline for the first chargeable period, in the manner selected by the consumer. The notice must include cancellation instructions. (Added by November 5, 2025 amendment.)",
+        "applies_when": {
+          "always_if_auto_renew": true,
+          "online_signup": false,
+          "free_trial": true,
+          "long_term_or_annual": false,
+          "consumer_facing": true
+        },
+        "statute_ref": "N.Y. Gen. Bus. Law § 527-a(1)(h)",
+        "source_url": "https://codes.findlaw.com/ny/general-business-law/gbs-sect-527-a/"
+      },
+      {
+        "id": "ny-price-change-notice",
+        "category": "price_change_notice",
+        "requirement_text": "The statute imposes two related obligations when a price increases. First (§ 527-a(1)(g)): the business must provide the consumer who accepted the offer with a clear and conspicuous notice of any material change to the terms — expressly including any price increases — at least five business days before, but no more than thirty days before, the date of the change, in the same manner required by paragraph f (i.e., via the channel selected by the consumer). Second (§ 527-a(1)(b-1)): the business may not charge the consumer a price higher than what was disclosed, or charge following a price increase, without either (i) first obtaining the consumer's affirmative consent to the increased price, or (ii) allowing the consumer to cancel within at least fourteen days after such charge and refunding the consumer the price of the remaining term on a pro rata basis. The statute provides that a business is not required to obtain affirmative consent to a price increase more than once before charging the increased price. (Both provisions added by November 5, 2025 amendment.)",
+        "applies_when": {
+          "always_if_auto_renew": true,
+          "online_signup": false,
+          "free_trial": false,
+          "long_term_or_annual": false,
+          "consumer_facing": true
+        },
+        "statute_ref": "N.Y. Gen. Bus. Law § 527-a(1)(b-1) and (g)",
+        "source_url": "https://codes.findlaw.com/ny/general-business-law/gbs-sect-527-a/"
+      }
+    ],
+    "penalty": "Civil penalty (court-imposed on AG application): up to $100 for a single violation and up to $500 for multiple violations resulting from a single act or incident. For a knowing violation: up to $500 for a single violation and up to $1,000 for multiple violations resulting from a single act or incident. The Attorney General may also seek an injunction and direct restitution. A business is not liable if it shows by a preponderance of evidence that the violation was not intentional and resulted from a bona fide error notwithstanding reasonable procedures. Source: N.Y. Gen. Bus. Law § 527-a(3), verified at https://codes.findlaw.com/ny/general-business-law/gbs-sect-527-a/ and corroborated by https://www.consumerfinancemonitor.com/2023/12/20/new-york-enacts-new-requirements-for-subscription-auto-renewals-and-credit-card-surcharge-pricing/",
+    "enforcement_notes": "Attorney General enforcement: The AG may seek injunctive relief, restitution, and civil penalties under § 527-a(3). No major publicized AG enforcement actions specifically under § 527-a were located in this research as of June 2026, though the AG's office has historically been active in subscription-billing enforcement under GBL § 349 (deceptive acts and practices), which may provide a parallel private right of action. The Kelley Drye June 2025 alert (https://www.kelleydrye.com/viewpoints/blogs/ad-law-access/ny-quietly-amends-automatic-renewal-law) notes the November 2025 amendments echo the FTC's Negative Option Rule, which was vacated federally in early 2025, increasing state-level enforcement significance. Pollock Cohen (https://www.pollockcohen.com/media/blog/2024-10-28-new-yorks-new-auto-renewal-law) notes class-action lawsuit exposure as a practical compliance risk, likely channeled through GBL § 349(h). Pending 2025 legislation (NY S5615A / A3928) appeared in search results and may further amend the statute; status as of June 2026 was not verified in this research.",
+    "caveats": "1. Statutory text verified primarily through FindLaw (current as of January 1, 2026) and the indexed NY Senate open-legislation page; the NY Senate page is JavaScript-rendered and full text was obtained through the indexed prior version. Readers should verify the current official text at https://www.nysenate.gov/legislation/laws/GBS/527-A before relying on this dataset. 2. The full text of § 527-a(1)(d-1) (additional cancellation mechanism) was truncated in available sources; the description above is drawn from secondary law-firm summaries (Kelley Drye, Perkins Coie) and should be verified against the statutory text. 3. The definition of 'consumer' in N.Y. Gen. Bus. Law § 527 was not fully retrieved in this research; it is uncertain whether the statute covers only personal/family/household transactions or also commercial/B2B arrangements. The Perkins Coie alert implicitly treats NY as narrower than Colorado (which expressly expanded its definition to 'any person'), but this researcher did not verify § 527's precise text. 4. The 'bona fide error' safe harbor (§ 527-a(3)) — its precise scope — was not fully analyzed; the full statutory text should be reviewed. 5. GBL § 349 (deceptive acts and practices) may independently impose obligations and provide a private right of action with different remedies (actual damages, attorney fees, $50 statutory minimum); this was not analyzed here. 6. Pending 2025 bills (NY S5615A / A3928) may further amend the statute; their status as of June 2026 was not confirmed. 7. The November 5, 2025 amendments are in force as of the research date (June 2026) and represent the current operative law; the prior December 2023 amendment's renewal-reminder requirement is incorporated into the current § 527-a(1)(f).",
+    "last_reviewed": "2026-06-26"
+  },
+  {
+    "state": "Colorado",
+    "code": "CO",
+    "statutes": [
+      {
+        "citation": "C.R.S. § 6-1-732 (Colorado Consumer Protection Act, Art. 1, Part 7)",
+        "effective": "January 1, 2022 (enacted via SB 21-190, 2021 session)",
+        "source_url": "https://colorado.public.law/statutes/crs_6-1-732"
+      },
+      {
+        "citation": "SB 25-145 (2025 Regular Session, Ch. 368) amending C.R.S. § 6-1-732 — cancellation provisions effective August 6, 2025; expanded 'consumer' definition effective February 16, 2026",
+        "effective": "August 6, 2025 (cancellation); February 16, 2026 (consumer definition)",
+        "source_url": "https://leg.colorado.gov/bills/sb25-145"
+      },
+      {
+        "citation": "C.R.S. § 6-1-112 (CCPA civil penalties)",
+        "effective": "Ongoing; current as of January 1, 2025",
+        "source_url": "https://codes.findlaw.com/co/title-6-consumer-and-commercial-affairs/co-rev-st-sect-6-1-112/"
+      }
+    ],
+    "requirements": [
+      {
+        "id": "co-disclosure-before-purchase",
+        "category": "disclosure_before_purchase",
+        "requirement_text": "C.R.S. § 6-1-732(2)(a) makes it unlawful to fail to present the automatic renewal offer terms in a clear and conspicuous manner before the automatic renewal contract is executed. For offers conveyed by voice, the terms must be presented in temporal proximity to the request for the consumer's consent. Where the offer includes a trial period offer, the offer must also include a clear and conspicuous explanation of the price that will be charged and any further purchase obligations imposed on the consumer after the trial period ends. 'Automatic renewal offer terms' are defined at § 6-1-732(1)(b) to include: (I) that the contract will auto-renew for a set term not to exceed one year unless the consumer gives express written consent for a longer term; (II) a description of the cancellation policy; (III) any recurring charges to the consumer's payment account; (IV) the length of the renewal term; and (V) the minimum purchase obligation, if any.",
+        "applies_when": {
+          "always_if_auto_renew": true,
+          "online_signup": false,
+          "free_trial": false,
+          "long_term_or_annual": false,
+          "consumer_facing": true
+        },
+        "statute_ref": "C.R.S. § 6-1-732(1)(b), (2)(a)",
+        "source_url": "https://colorado.public.law/statutes/crs_6-1-732"
+      },
+      {
+        "id": "co-online-link-placement-consent",
+        "category": "affirmative_consent",
+        "requirement_text": "C.R.S. § 6-1-732(2)(b) makes it unlawful to utilize an online link presented as part of an automatic renewal contract offer that directs a consumer to detailed information about the contract, unless that link: (I) is available before the consumer elects to purchase any good or service subject to the contract; (II) appears directly adjacent to any online link used by the consumer to purchase the good or service; and (III) is labeled with, or is directly adjacent to, a clear and conspicuous disclosure stating that by purchasing the good or service the consumer agrees to enroll in an automatic renewal contract. This provision constitutes Colorado's primary pre-purchase consent mechanism for online transactions; the statute does not separately require a standalone checkbox or click-to-consent step.",
+        "applies_when": {
+          "always_if_auto_renew": true,
+          "online_signup": false,
+          "free_trial": false,
+          "long_term_or_annual": false,
+          "consumer_facing": true
+        },
+        "statute_ref": "C.R.S. § 6-1-732(2)(b)",
+        "source_url": "https://colorado.public.law/statutes/crs_6-1-732"
+      },
+      {
+        "id": "co-written-acknowledgment",
+        "category": "acknowledgment_confirmation",
+        "requirement_text": "C.R.S. § 6-1-732(2)(c) makes it unlawful to fail to provide the consumer a written acknowledgment that includes the automatic renewal offer terms, the cancellation policy, and information regarding how to cancel, in a manner that is capable of being retained by the consumer. Where the offer includes a trial period offer, the written acknowledgment must also disclose how the consumer may cancel the automatic renewal contract, and the person must allow the consumer to cancel the contract before the consumer is required to pay for the goods or services.",
+        "applies_when": {
+          "always_if_auto_renew": true,
+          "online_signup": false,
+          "free_trial": false,
+          "long_term_or_annual": false,
+          "consumer_facing": true
+        },
+        "statute_ref": "C.R.S. § 6-1-732(2)(c)",
+        "source_url": "https://colorado.public.law/statutes/crs_6-1-732"
+      },
+      {
+        "id": "co-cancellation-mechanism",
+        "category": "cancellation_mechanism",
+        "requirement_text": "C.R.S. § 6-1-732(2)(d) makes it unlawful to fail to provide a simple, cost-effective, timely, easy-to-use, and readily accessible mechanism for canceling an automatic renewal contract or trial period offer. A person is deemed to comply if they offer: (I) a one-step online cancellation link located on the person's website or contained in an electronic device, service, or communication to the consumer, available immediately or after the consumer completes a reasonable authentication protocol used solely to confirm authorization; or (II) an in-person mechanism at a physical location where the consumer regularly utilizes the goods or services subject to the contract. As amended by SB 25-145 (cancellation provisions effective August 6, 2025): a consumer who enrolled in a subscription online must always be allowed to cancel online via a one-step cancellation link — offering only in-person cancellation no longer satisfies the statute for online enrollees. During the cancellation process, a company may display discount offers or information about the effects of cancellation only if it simultaneously displays a prominently located and continuously proximate direct link to proceed to cancellation; upon the consumer clicking that link, cancellation must be promptly processed without obstruction or delay.",
+        "applies_when": {
+          "always_if_auto_renew": false,
+          "online_signup": true,
+          "free_trial": false,
+          "long_term_or_annual": false,
+          "consumer_facing": true
+        },
+        "statute_ref": "C.R.S. § 6-1-732(2)(d); SB 25-145 (Ch. 368, 2025)",
+        "source_url": "https://leg.colorado.gov/bills/sb25-145"
+      },
+      {
+        "id": "co-renewal-reminder-notice",
+        "category": "renewal_reminder_notice",
+        "requirement_text": "C.R.S. § 6-1-732(4) requires a person selling goods or services pursuant to an automatic renewal contract to notify the consumer that the contract will automatically renew or continue unless the consumer cancels. The notice must include the cancellation process, provide clear and accurate information about the sender's identity, and be consistent with the cancellation mechanism required by § 6-1-732(2)(d). Delivery methods: physical mail; email; or another easily accessible form of communication (such as a text message or mobile app) if the consumer specifically authorizes that form or customarily uses it to communicate with the person. Timing: at least 25 and no more than 40 days before the first automatic renewal, and at least 25 and no more than 40 days before each subsequent renewal. Exception for sub-12-month renewal terms: if any renewal term is less than 12 months, the notice is required at least once in the 25-to-40-day window before any renewal that would extend the contract beyond a continuous 12-month period, and at least once in the 25-to-40-day window before any subsequent renewal that would extend the contract beyond each additional consecutive 12-month period.",
+        "applies_when": {
+          "always_if_auto_renew": true,
+          "online_signup": false,
+          "free_trial": false,
+          "long_term_or_annual": true,
+          "consumer_facing": true
+        },
+        "statute_ref": "C.R.S. § 6-1-732(4)(a), (4)(b)",
+        "source_url": "https://colorado.public.law/statutes/crs_6-1-732"
+      },
+      {
+        "id": "co-free-trial-conversion-disclosure",
+        "category": "free_trial_conversion_notice",
+        "requirement_text": "C.R.S. § 6-1-732(2)(a) and (2)(c) impose specific requirements where an automatic renewal offer includes a trial period offer. At the time of the offer, the person must include a clear and conspicuous explanation of the price that will be charged and any further purchase obligations imposed after the trial period ends (§ 6-1-732(2)(a)). In the written acknowledgment delivered after enrollment, the person must disclose how the consumer may cancel the automatic renewal contract and must allow the consumer to cancel before the consumer is required to pay for the goods or services (§ 6-1-732(2)(c)). The statute does not prescribe a separate advance notice to be sent a specified number of days before a trial period converts to a paid subscription; the required disclosures are made at the point of offer and at the time of the written acknowledgment.",
+        "applies_when": {
+          "always_if_auto_renew": true,
+          "online_signup": false,
+          "free_trial": true,
+          "long_term_or_annual": false,
+          "consumer_facing": true
+        },
+        "statute_ref": "C.R.S. § 6-1-732(2)(a), (2)(c)",
+        "source_url": "https://colorado.public.law/statutes/crs_6-1-732"
+      },
+      {
+        "id": "co-material-change-notice",
+        "category": "price_change_notice",
+        "requirement_text": "C.R.S. § 6-1-732(3) requires that if a material change occurs in the terms of an automatic renewal contract that has been accepted by a consumer, the person must provide to the consumer, in a manner that may be retained by the consumer, a clear and conspicuous notice of the material change and information regarding how to cancel the automatic renewal contract, including information about the cancellation mechanism described in § 6-1-732(2)(d). The statute uses 'material change' without separately defining the term; price increases would constitute a material change. The statute does not prescribe a specific advance-notice window for the material change notice (unlike peer states such as New York, which requires 5 to 30 days' advance notice). The notice requirement applies whenever a material change occurs after the consumer has accepted the contract.",
+        "applies_when": {
+          "always_if_auto_renew": true,
+          "online_signup": false,
+          "free_trial": false,
+          "long_term_or_annual": false,
+          "consumer_facing": true
+        },
+        "statute_ref": "C.R.S. § 6-1-732(3)",
+        "source_url": "https://colorado.public.law/statutes/crs_6-1-732"
+      }
+    ],
+    "penalty": "Violations of C.R.S. § 6-1-732 constitute deceptive trade practices under the Colorado Consumer Protection Act (C.R.S. § 6-1-105). C.R.S. § 6-1-732(6) vests exclusive enforcement authority in the attorney general and district attorneys (no private right of action expressly provided within § 6-1-732 itself). Under C.R.S. § 6-1-112(1)(a), any person who violates any provision of CCPA Article 1 is subject to a civil penalty of up to $20,000 per violation, with each consumer or transaction constituting a separate violation. Violations against elderly persons carry a penalty of up to $50,000 per violation (§ 6-1-112(1)(c)). Violation of a court order or injunction entered under the CCPA carries an additional civil penalty of up to $10,000 per violation (§ 6-1-112(1)(b)). Source: https://codes.findlaw.com/co/title-6-consumer-and-commercial-affairs/co-rev-st-sect-6-1-112/",
+    "enforcement_notes": "No Colorado-specific enforcement actions targeting C.R.S. § 6-1-732 were identified in primary sources consulted. Nationally, multi-state coordinated AG enforcement of negative-option and auto-renewal laws is active: 34 AGs settled with TFG Holdings (online apparel) over unauthorized recurring-charge enrollment; New York AG secured a $600,000 settlement with Equinox in June 2025 over difficult-cancellation practices (cited by Perkins Coie, July 1, 2025: https://perkinscoie.com/insights/update/new-york-and-colorado-update-auto-renewing-subscription-requirements). Colorado's exclusive-enforcement-by-AG/DA model (§ 6-1-732(6)) has not been tested in published case law found in this research; whether it forecloses any private suits under the general CCPA private-action provision (§ 6-1-113) is not settled. Class-action risk under general CCPA § 6-1-113 remains a live question. The Wiley Law State Consumer Protection Series (Nov. 20, 2025) identifies Colorado among states with new 2025 ARL obligations and notes increasing joint state-federal enforcement risk across the subscription sector.",
+    "caveats": "1. The prompt's starting hint referenced 'SB 24-110' as the Colorado auto-renewal bill. No Colorado Senate Bill 24-110 related to automatic renewals was found in any primary or secondary source consulted. The original statute was enacted via SB 21-190 (2021, effective January 1, 2022); the most recent amendment is SB 25-145 (2025). The 'SB 24-110' reference appears to be incorrect. 2. SB 25-145 has a phased implementation: one-step online cancellation amendments took effect August 6, 2025; expansion of 'consumer' to 'a person' (covering B2B subscriptions) took effect February 16, 2026. As of June 2026 both amendments are fully operative. The consumer_facing: true flags in this dataset reflect the statute's original consumer-focused scope; scanners should note B2B subscriptions are now covered as of February 16, 2026. 3. The FindLaw and colorado.public.law versions of § 6-1-732 used here were current as of January 1, 2025; the SB 25-145 session law (Chapter 368) should be consulted for the complete amended text, particularly the new cancellation subsection language. The Colorado General Assembly PDF of the signed bill (https://leg.colorado.gov/sites/default/files/2025a_145_signed.pdf) returned HTTP 403 during this research. 4. The exemptions subsection § 6-1-732(5)(a) text was not fully retrieved. Confirmed exemptions under § 6-1-732(5)(b)-(f): services regulated by the FCC, FERC, or the Colorado Public Utilities Commission (§ 40-2-101); entities regulated by the Colorado Division of Insurance; banks and bank holding companies licensed under state or federal law (and their subsidiaries/affiliates); credit unions and other financial institutions licensed under state or federal law; air carriers regulated under the Federal Aviation Act of 1958 (49 U.S.C. § 40101 et seq.). 5. The statute does not separately define 'material change' in § 6-1-732(3) and does not specify a timing window for delivering a material change notice, leaving open questions about adequate advance notice for price increases. 6. The renewal notice timing exception for sub-12-month renewals (§ 6-1-732(4)(b)) was partially retrieved; the full exception text — particularly the threshold language — should be verified against the enrolled session law before relying on it for scanner logic.",
+    "last_reviewed": "2026-06-26"
+  },
+  {
+    "state": "Connecticut",
+    "code": "CT",
+    "statutes": [
+      {
+        "citation": "Conn. Gen. Stat. § 42-158ff (Chapter 742d — Automatic Renewal and Continuous Services), enacted by P.A. 23-191, S. 1; P.A. 23-205, S. 156",
+        "effective": "October 1, 2023",
+        "source_url": "https://cga.ct.gov/2026/sup/chap_742d.htm"
+      },
+      {
+        "citation": "Conn. Gen. Stat. § 42-158ff as amended by P.A. 25-113, S. 20 (adds statutory definition of 'clearly and conspicuously disclose' and affirmative consent record-of-consent evidentiary guidance)",
+        "effective": "October 1, 2025",
+        "source_url": "https://www.insideprivacy.com/consumer-protection/states-press-forward-with-automatic-renewal-laws-amidst-vacating-of-the-ftcs-negative-option-rule/"
+      },
+      {
+        "citation": "Conn. Gen. Stat. § 42-158ff as amended by P.A. 25-44, S. 7 (adds annual reminder, expands cancellation to include telephone option with voicemail rules, removes 'no private right of action' clause, adds per se CUTPA unfair trade practice designation)",
+        "effective": "July 1, 2026",
+        "source_url": "https://www.cga.ct.gov/2025/act/pa/pdf/2025PA-00044-R00SB-00003-PA.pdf"
+      }
+    ],
+    "requirements": [
+      {
+        "id": "ct-pre-renewal-disclosure",
+        "category": "disclosure_before_purchase",
+        "requirement_text": "Conn. Gen. Stat. § 42-158ff(b)(1)(B) requires that, before an automatic renewal, a business must clearly and conspicuously disclose to the consumer: (i) that the agreement will automatically renew until the consumer acts to prevent it; (ii) the actions required to prevent renewal (and, if disclosed electronically, a link or other electronic means to take those actions); (iii) all recurring charges to the consumer's credit card, debit card, or third-party payment account, and the amount of any known changes; (iv) the length of any automatic renewal term (unless the consumer selects the term); (v) any additional provisions concerning the renewal term; (vi) any minimum purchase obligation; and (vii) contact information for the business. Section 42-158ff(b)(1)(C) imposes the same seven-item disclosure requirement for continuous services provisions, required before the consumer enters the agreement. Section 42-158ff(b)(2) specifies that electronic and written disclosures must be retained by the consumer and appear in text that is either larger than surrounding text or in a contrasting typeface, font, or color (or set off by symbols); verbal and telephonic disclosures must be in a volume and cadence readily audible and understandable to the consumer.",
+        "applies_when": {
+          "always_if_auto_renew": true,
+          "online_signup": false,
+          "free_trial": false,
+          "long_term_or_annual": false,
+          "consumer_facing": true
+        },
+        "statute_ref": "Conn. Gen. Stat. § 42-158ff(b)(1)(B)-(C), (b)(2)",
+        "source_url": "https://cga.ct.gov/2026/sup/chap_742d.htm"
+      },
+      {
+        "id": "ct-affirmative-consent",
+        "category": "affirmative_consent",
+        "requirement_text": "Conn. Gen. Stat. § 42-158ff(c) prohibits a business from charging a consumer's credit card, debit card, or third-party payment account for any automatic renewal or continuous consumer services — regardless of whether offered at a promotional or discounted price — unless the business has first obtained the consumer's affirmative consent to such renewal or continuous services. As amended by P.A. 25-113 (effective October 1, 2025), when a state agency or court considers whether affirmative consent was obtained, it must consider, among other factors, whether the business produced a record of such affirmative consent obtained in accordance with applicable law, including Conn. Gen. Stat. §§ 52-570d and 53a-189 (concerning recording of telephonic communications). The statute does not expressly mandate a specific consent-record format but creates an evidentiary expectation in enforcement proceedings.",
+        "applies_when": {
+          "always_if_auto_renew": true,
+          "online_signup": false,
+          "free_trial": false,
+          "long_term_or_annual": false,
+          "consumer_facing": true
+        },
+        "statute_ref": "Conn. Gen. Stat. § 42-158ff(c)",
+        "source_url": "https://cga.ct.gov/2026/sup/chap_742d.htm"
+      },
+      {
+        "id": "ct-acknowledgment-consent-record",
+        "category": "acknowledgment_confirmation",
+        "requirement_text": "Conn. Gen. Stat. § 42-158ff(c) (as amended by P.A. 25-113, effective October 1, 2025) directs that state agencies and courts assessing affirmative consent compliance 'shall consider, without limitation, whether the business has produced a record of such affirmative consent that was obtained in accordance with applicable law, including, but not limited to, sections 52-570d and 53a-189, concerning recording telephonic communications.' The statute does not expressly impose a standalone recordkeeping mandate but establishes that consent documentation is a factor in enforcement proceedings. This creates a functional compliance expectation that businesses retain evidence of how and when consumer consent was captured.",
+        "applies_when": {
+          "always_if_auto_renew": true,
+          "online_signup": false,
+          "free_trial": false,
+          "long_term_or_annual": false,
+          "consumer_facing": true
+        },
+        "statute_ref": "Conn. Gen. Stat. § 42-158ff(c) (as amended by P.A. 25-113, S. 20)",
+        "source_url": "https://cga.ct.gov/2026/sup/chap_742d.htm"
+      },
+      {
+        "id": "ct-cancellation-mechanism-general",
+        "category": "cancellation_mechanism",
+        "requirement_text": "Conn. Gen. Stat. § 42-158ff(b)(1)(A) requires that a business entering or offering to enter a consumer agreement with an automatic renewal or continuous services provision must establish and maintain an electronic mail address, postal address, or the telephone number or online means required under the statute's cancellation subsection, which the consumer may use to prevent automatic renewal or terminate continuous consumer services. Under the pre-July 1, 2026 version, this includes a toll-free telephone number. Under the July 1, 2026 amendments (P.A. 25-44), 'toll-free' is removed. Section 42-158ff(e)(2) (effective July 1, 2026) specifies that each business must enable cancellation by at least one of: (A) a prominently displayed direct link or button in the consumer's account, profile, device, or user settings; (B) a reply-able email message from the business; or (C) beginning July 1, 2026, a telephone number clearly and conspicuously displayed on the business's website. The statute (§ 42-158ff(e)(3)) requires the business to promptly answer all calls during normal business hours, and if a consumer leaves a voicemail requesting cancellation, the business must either process the cancellation or return the call within one business day. If the voicemail contains sufficient information to effectuate cancellation and the business cannot reach the consumer, it must process the cancellation within one business day. No business subject to these provisions may obstruct or delay a consumer's efforts to cancel (§ 42-158ff(e)(4)).",
+        "applies_when": {
+          "always_if_auto_renew": false,
+          "online_signup": true,
+          "free_trial": false,
+          "long_term_or_annual": false,
+          "consumer_facing": true
+        },
+        "statute_ref": "Conn. Gen. Stat. § 42-158ff(b)(1)(A); § 42-158ff(d) [pre-July 1, 2026] / § 42-158ff(e)(2)-(4) [from July 1, 2026 per P.A. 25-44]",
+        "source_url": "https://cga.ct.gov/2026/sup/chap_742d.htm"
+      },
+      {
+        "id": "ct-cancellation-mechanism-online",
+        "category": "cancellation_mechanism",
+        "requirement_text": "Conn. Gen. Stat. § 42-158ff(d)(1) [pre-July 1, 2026] / § 42-158ff(e)(1) [from July 1, 2026 per P.A. 25-44] requires that each business entering into a consumer agreement online must allow the consumer to take any action necessary to prevent automatic renewal or terminate continuous consumer services online, without requiring any offline action. The business must enable this online cancellation via at least one of the methods specified in the statute (prominently displayed direct link or button; reply-able email). A business may require account authentication online before processing cancellation, but consumers unwilling or unable to authenticate online must not be precluded from authenticating or canceling by another available method. The business may not obstruct or delay the consumer's efforts to cancel online.",
+        "applies_when": {
+          "always_if_auto_renew": false,
+          "online_signup": true,
+          "free_trial": false,
+          "long_term_or_annual": false,
+          "consumer_facing": true
+        },
+        "statute_ref": "Conn. Gen. Stat. § 42-158ff(d)(1)-(2) [pre-July 1, 2026] / § 42-158ff(e)(1), (5) [from July 1, 2026 per P.A. 25-44]",
+        "source_url": "https://cga.ct.gov/2026/sup/chap_742d.htm"
+      },
+      {
+        "id": "ct-annual-renewal-reminder",
+        "category": "renewal_reminder_notice",
+        "requirement_text": "Conn. Gen. Stat. § 42-158ff(d) (added by P.A. 25-44, effective July 1, 2026) requires that beginning on July 1, 2026, each business entering into a consumer agreement with an automatic renewal or continuous services provision must send the consumer an annual reminder about that provision. The reminder must be sent: (A) in the same manner in which the provision was activated, if activation occurred by any means other than an in-person transaction; (B) by the means in which the consumer is accustomed to interacting with the business (electronic mail, mail, or telephone), if applicable; or (C) by electronic mail, mail, or telephone, if the provision was activated in-person or the consumer has no established interaction channel. The annual reminder must include: (A) a statement identifying (i) the goods or services subject to the provision and (ii) the means by which the consumer may prevent renewal or terminate continuous services; and (B) the frequency and amount of charges associated with the renewal or continuous services. This requirement applies regardless of subscription term length.",
+        "applies_when": {
+          "always_if_auto_renew": true,
+          "online_signup": false,
+          "free_trial": false,
+          "long_term_or_annual": true,
+          "consumer_facing": true
+        },
+        "statute_ref": "Conn. Gen. Stat. § 42-158ff(d) (added by P.A. 25-44, S. 7, effective July 1, 2026)",
+        "source_url": "https://cga.ct.gov/2026/sup/chap_742d.htm"
+      },
+      {
+        "id": "ct-free-trial-precontract-disclosure",
+        "category": "free_trial_conversion_notice",
+        "requirement_text": "Conn. Gen. Stat. § 42-158ff(b)(1)(E) requires that, before a consumer enters into a consumer agreement that includes a free gift or trial period, the business must clearly and conspicuously disclose: (i) the price that the consumer will be charged following expiration of the free gift or trial period; and (ii) any manner in which pricing for the agreement will change following expiration. This disclosure must meet the format requirements of § 42-158ff(b)(2) (retainable, contrasting text for written/electronic; readily audible for verbal/telephonic). 'Free gift' in this context does not include a free promotional item or gift that differs from the consumer goods or services that are the subject of the consumer agreement.",
+        "applies_when": {
+          "always_if_auto_renew": true,
+          "online_signup": false,
+          "free_trial": true,
+          "long_term_or_annual": false,
+          "consumer_facing": true
+        },
+        "statute_ref": "Conn. Gen. Stat. § 42-158ff(b)(1)(E)",
+        "source_url": "https://cga.ct.gov/2026/sup/chap_742d.htm"
+      },
+      {
+        "id": "ct-free-trial-timed-conversion-notice",
+        "category": "free_trial_conversion_notice",
+        "requirement_text": "Conn. Gen. Stat. § 42-158ff(b)(1)(F) requires that, for consumer agreements offered electronically or telephonically that include a free gift or trial period, or a discounted or promotional price period, the business must send a timed notice to the consumer disclosing: (I) that the agreement will automatically renew or continuous services will continue until the consumer acts to prevent it; (II) the duration of the renewal term or continuous services; (III) any additional provisions; (IV) the actions required to prevent renewal or termination; and (V) if offered electronically, a prominently displayed direct link or button or a reply-able email as required by the cancellation subsection. Timing requirements: (1) if the free gift/trial/discounted period is at least 32 days in duration, the notice must be sent at least 21 days after such period commences and not earlier than 3 days before expiration; (2) if the period is at least one year in duration, the notice must be sent at least 15 days but not more than 45 days before expiration. Exception: a business is not required to send this timed notice if it has not collected, or does not maintain, the consumer's electronic mail address or telephone number, as applicable, and is unable to reach the consumer by other electronic means.",
+        "applies_when": {
+          "always_if_auto_renew": true,
+          "online_signup": false,
+          "free_trial": true,
+          "long_term_or_annual": false,
+          "consumer_facing": true
+        },
+        "statute_ref": "Conn. Gen. Stat. § 42-158ff(b)(1)(F)(i)-(iii)",
+        "source_url": "https://cga.ct.gov/2026/sup/chap_742d.htm"
+      },
+      {
+        "id": "ct-material-change-notice",
+        "category": "price_change_notice",
+        "requirement_text": "Conn. Gen. Stat. § 42-158ff(b)(1)(D) requires that before a business makes any material change to the terms of an automatic renewal provision or continuous services provision, it must clearly and conspicuously disclose to the consumer: (i) the material change; and (ii) a description of the actions the consumer is required to take to cancel the automatic renewal or terminate the continuous consumer services. This disclosure must meet the format requirements of § 42-158ff(b)(2). The statute uses 'material change' without further statutory definition; the provision applies to changes beyond price (it covers terms generally), but price increases and term changes would qualify.",
+        "applies_when": {
+          "always_if_auto_renew": true,
+          "online_signup": false,
+          "free_trial": false,
+          "long_term_or_annual": false,
+          "consumer_facing": true
+        },
+        "statute_ref": "Conn. Gen. Stat. § 42-158ff(b)(1)(D)",
+        "source_url": "https://cga.ct.gov/2026/sup/chap_742d.htm"
+      }
+    ],
+    "penalty": "Prior to July 1, 2026: Conn. Gen. Stat. § 42-158ff expressly excluded a private right of action ('Nothing in this section shall be construed to create a private right of action,' former § 42-158ff(e)). Enforcement was limited to the Connecticut Department of Consumer Protection (DCP) and Attorney General under CUTPA (Conn. Gen. Stat. Chapter 735a). DCP Commissioner remedies include cease-and-desist orders (§ 42-110d) and restitution orders in cases involving less than $10,000 (as amended by P.A. 15-60). From July 1, 2026 (per P.A. 25-44, S.7): § 42-158ff(f) provides that 'any violation of the provisions of this section shall constitute an unfair trade practice under subsection (a) of section 42-110b,' making violations per se CUTPA violations. Full CUTPA enforcement then applies: (1) Private plaintiffs may sue for actual damages, punitive damages, costs, and reasonable attorneys' fees under Conn. Gen. Stat. § 42-110g; ascertainable loss of money or property is required to maintain a private action. (2) Class actions are available under Conn. Gen. Stat. § 42-110h. (3) Courts may impose civil penalties up to $5,000 per willful violation and up to $25,000 for violation of a court restraining order under Conn. Gen. Stat. § 42-110o. Source for CUTPA penalty amounts: CGA Research Report 2005-R-0261 (https://www.cga.ct.gov/2005/rpt/2005-R-0261.htm); restitution threshold updated by P.A. 15-60 per CGA annotated history.",
+    "enforcement_notes": "No Connecticut DCP or AG enforcement actions specifically targeting § 42-158ff violations have been identified as of June 2026. The statute's express exclusion of a private right of action (in effect until July 1, 2026) significantly limited enforcement exposure prior to that date. CT AG William Tong publicly supported FTC negative option rule amendments in June 2023, co-signing a 26-state coalition letter citing consumer complaints about unwanted subscription renewals (portal.ct.gov press release, June 26, 2023). Wiggin and Dana (July 2025 client alert, https://www.wiggin.com/publication/caveat-venditor1-the-connecticut-general-assembly-has-added-seven-new-per-se-cutpa-violations/) identified § 42-158ff violations as one of seven new per se CUTPA violations effective July 1, 2026, noting the significant increase in private litigation exposure. The CT AG has demonstrated active CUTPA consumer-protection enforcement capacity: first CTDPA enforcement settlement with TicketNetwork ($85,000, 2025). The opening of the private right of action on July 1, 2026 creates material class action risk under Conn. Gen. Stat. § 42-110h; no class action filings under § 42-158ff have been identified as of the research date.",
+    "caveats": "(1) P.A. 25-44 (the private-right-of-action and annual-reminder amendment) takes effect July 1, 2026 — five days after this research date. No enforcement actions, class action filings, or agency guidance interpreting the amended statute yet exist. (2) The effective date of P.A. 25-113 (October 1, 2025) was confirmed by InsidePrivacy (a Covington law-firm publication) but could not be independently verified against a primary CGA public-act PDF due to SSL certificate errors on the cga.ct.gov domain during this research session; the codified statute text at cga.ct.gov/2026/sup/chap_742d.htm confirms P.A. 25-113's textual changes. (3) The audiovisual content exemption — 'global or national service largely or predominantly consisting of audiovisual content' (§ 42-158ff(a)(4)(E)) — has no statutory definition or regulatory guidance; its scope is uncertain (e.g., whether hybrid streaming/software services qualify is unresolved). (4) Civil penalty amounts cited ($5,000 per willful violation; $25,000 for restraining order violation) originate from a 2005 CGA research report and the CGA annotated CUTPA chapter; while the $10,000 restitution update from P.A. 15-60 was confirmed in the annotated history, independent verification of the current civil penalty cap against the most recent CUTPA text (§ 42-110o) was not possible because Justia and LawServer require JavaScript rendering. (5) The 2026 Connecticut legislative session (per Mondaq, June 2026) reportedly reserved several new per se CUTPA violations for AG-only enforcement — it is uncertain whether any 2026 act further modifies the private right of action under § 42-158ff; verification against 2026 session acts is recommended before relying on this dataset for litigation purposes. (6) The statute applies only to 'consumer agreements' initially entered into or amended on or after October 1, 2023; pre-existing agreements not amended after that date are not covered.",
+    "last_reviewed": "2026-06-26"
+  },
+  {
+    "state": "Massachusetts",
+    "code": "MA",
+    "statutes": [
+      {
+        "citation": "940 CMR 38.00 (promulgated under M.G.L. c. 93A § 2(c))",
+        "effective": "September 2, 2025 (finalized March 2025)",
+        "source_url": "https://www.mass.gov/doc/junk-fee-regulations-940-cmr-3800-0/download"
+      },
+      {
+        "citation": "M.G.L. c. 93A §§ 2, 4, 9 (Massachusetts Consumer Protection Act) — enabling authority for 940 CMR 38.00; no amendment to 93A itself in 2024-2025",
+        "effective": "Statute long-standing; § 4 civil penalty at $5,000 per violation predates 2024",
+        "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXV/Chapter93A"
+      }
+    ],
+    "requirements": [
+      {
+        "id": "ma-disclosure-before-purchase",
+        "category": "disclosure_before_purchase",
+        "requirement_text": "Before a consumer accepts a negative option feature or trial offer, the seller must clearly and conspicuously disclose in writing: (1) any charges the consumer may incur as a result of accepting the offer; (2) any products for which charges may be incurred; (3) instructions for the consumer to reject or cancel the offer before being charged; (4) the specific calendar date by which the consumer must reject or cancel to avoid being charged; (5) the specific calendar date on which the consumer will be charged if the consumer fails to cancel; (6) what the charge is for and whether charges will increase after a certain period; (7) whether charges will recur on a set basis unless canceled by the subscriber; and (8) instructions on how to cancel a recurring charge or subscription. Calendar-date specificity (items 4 and 5) is expressly required, going beyond a mere deadline by number of days.",
+        "applies_when": {
+          "always_if_auto_renew": true,
+          "online_signup": false,
+          "free_trial": false,
+          "long_term_or_annual": false,
+          "consumer_facing": true
+        },
+        "statute_ref": "940 CMR 38.04",
+        "source_url": "https://www.mass.gov/doc/junk-fee-regulations-940-cmr-3800-0/download"
+      },
+      {
+        "id": "ma-cancellation-mechanism",
+        "category": "cancellation_mechanism",
+        "requirement_text": "The seller must provide a simple mechanism to cancel the negative option feature that is at least as easy to access and use as the method the consumer used to initiate the negative option feature, and that is available through the same medium through which the consumer initiated (Internet, telephone, mail, or in-person). Specifically, if the consumer initiated through the internet, cancellation must be available through the same website or application used to sign up — not merely any online method. If cancellation is by telephone and no agent is available, the seller must provide an automated cancellation system or an adequate voicemail system that identifies the information needed to effectuate cancellation, and must return voicemail messages promptly enough to allow cancellation before a recurring charge occurs.",
+        "applies_when": {
+          "always_if_auto_renew": false,
+          "online_signup": true,
+          "free_trial": false,
+          "long_term_or_annual": false,
+          "consumer_facing": true
+        },
+        "statute_ref": "940 CMR 38.05(3)(a)-(b)",
+        "source_url": "https://www.mass.gov/doc/junk-fee-regulations-940-cmr-3800-0/download"
+      },
+      {
+        "id": "ma-renewal-notice-over-31-days",
+        "category": "renewal_reminder_notice",
+        "requirement_text": "For negative option features with terms exceeding 31 days, a written notice must be delivered not less than 5 days and not more than 30 days before the renewal date. The notice must clearly and conspicuously disclose: (1) any financial obligations the consumer will incur upon failure to cancel; (2) the products for which charges will be made; (3) instructions on how to cancel; (4) the date by which cancellation is required; and (5) the date on which the financial obligation occurs upon failure to cancel. The notice must be delivered through a substantially similar medium as used at signup, or through a commonly-used medium that is reasonably calculated to be seen and understood by an ordinary consumer and that has been affirmatively chosen by the consumer as their preferred method of contact.",
+        "applies_when": {
+          "always_if_auto_renew": true,
+          "online_signup": false,
+          "free_trial": false,
+          "long_term_or_annual": false,
+          "consumer_facing": true
+        },
+        "statute_ref": "940 CMR 38.04(5)",
+        "source_url": "https://www.mass.gov/doc/junk-fee-regulations-940-cmr-3800-0/download"
+      },
+      {
+        "id": "ma-renewal-notice-31-days-or-less",
+        "category": "renewal_reminder_notice",
+        "requirement_text": "For negative option features with terms of 31 days or less, the full pre-renewal notice requirements apply, with an alternative available: in lieu of the 5-30-day pre-renewal notice, the seller may provide a clear and conspicuous disclosure at least as frequently as the consumer is charged, disclosing the amount the consumer has been charged at auto-renewal and instructions for how to cancel the recurring charge to avoid incurring additional charges.",
+        "applies_when": {
+          "always_if_auto_renew": true,
+          "online_signup": false,
+          "free_trial": false,
+          "long_term_or_annual": false,
+          "consumer_facing": true
+        },
+        "statute_ref": "940 CMR 38.06",
+        "source_url": "https://www.mass.gov/doc/junk-fee-regulations-940-cmr-3800-0/download"
+      },
+      {
+        "id": "ma-free-trial-calendar-date",
+        "category": "free_trial_conversion_notice",
+        "requirement_text": "Before a consumer accepts a trial offer that converts to a paid recurring subscription, the seller must clearly and conspicuously disclose the specific calendar date by which the consumer must reject or cancel the trial offer to avoid being charged, and the specific calendar date on which the consumer will be charged if the consumer fails to cancel. A general statement of the deadline in days or frequency is insufficient; the regulation expressly requires calendar-date specificity.",
+        "applies_when": {
+          "always_if_auto_renew": true,
+          "online_signup": false,
+          "free_trial": true,
+          "long_term_or_annual": false,
+          "consumer_facing": true
+        },
+        "statute_ref": "940 CMR 38.04",
+        "source_url": "https://www.mass.gov/doc/junk-fee-regulations-940-cmr-3800-0/download"
+      }
+    ],
+    "penalty": "AG enforcement under M.G.L. c. 93A § 4: civil penalty up to $5,000 per knowing or willful violation, plus injunctive relief and restitution of moneys acquired through the unlawful practice. Private right of action under M.G.L. c. 93A § 9: actual damages or $25 minimum per claimant (whichever is greater); 2-3x (double to treble) damages for willful or knowing violations or bad-faith refusal to settle; attorney's fees and costs. Class actions are permitted under § 9. Violations of 940 CMR 38.00 are expressly deemed unfair or deceptive acts under M.G.L. c. 93A § 2. Sources: M.G.L. c. 93A § 4 (https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXV/Chapter93A/Section4); M.G.L. c. 93A § 9 (https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXV/Chapter93A/Section9); Rich May P.C. client alert (https://www.richmaylaw.com/goodbye-junk-fees-new-ago-regulations-eliminate-hidden-fees-on-sales-and-auto-renewing-subscriptions/).",
+    "enforcement_notes": "No specific AG enforcement actions or named class-action suits under 940 CMR 38.00 were identified in sources reviewed as of June 2026, consistent with the regulation's September 2, 2025 effective date and the usual lag before enforcement. Multiple law-firm alerts (Holland & Knight, Oct. 2025; ZwillGen, Mar. 2025 updated Apr. 2026; FKKS, Mar. 2025) characterize the regulation as signaling enhanced state-AG enforcement during a period of federal consumer-protection rollbacks. The AG's office noted that consumers may file complaints at the AG Consumer Hotline (617-727-8400) or online. Class-action exposure under M.G.L. c. 93A § 9 is historically active in Massachusetts; no suits specifically citing 940 CMR 38.00 were identified in this review. Separately, HB389 (introduced 2025 legislative session) would add an explicit express-consent requirement for negative-option billing and ban 'data pass' billing practices; its enactment status was not confirmed in reviewed sources.",
+    "caveats": "(1) 940 CMR 38.00 took effect September 2, 2025; enforcement case law and settled regulatory interpretation under this specific regulation are nascent as of June 2026. (2) The official mass.gov regulatory landing page for 940 CMR 38.00 returned HTTP 404 during this research; all requirements were cross-verified through the official AG regulation PDF (mass.gov document download URL), the AG press release, and three independent law-firm client alerts (Holland & Knight, ZwillGen, FKKS). (3) The regulation PDF was indexed as binary/encoded content; verbatim subsection text for some provisions (e.g., 940 CMR 38.05(1)-(2) on affirmative consent as a standalone requirement) was not extractable verbatim from the PDF index. Accordingly, affirmative_consent and acknowledgment_confirmation categories were omitted — secondary sources describe the consent/initiation framework but the exact subsection text was not confirmed. (4) HB389 (proposed legislation) would add an explicit express-consent/no-data-pass requirement; it is not yet law and is not reflected in the requirements above. (5) The regulation applies broadly to sellers 'engaged in advertising, marketing, solicitation, or offering targeted to or resulting in a sale in Massachusetts,' giving it extraterritorial reach beyond Massachusetts-domiciled sellers. (6) Price-change notice as a standalone category was not confirmed in reviewed sources; the initial disclosure requirement (item 6 of 940 CMR 38.04) covers disclosure of anticipated future price increases at signup, and the renewal notice (940 CMR 38.04(5)) implicitly requires disclosing the then-current charge amount, but no specific standalone price-change-notice trigger was identified. (7) A July 29, 2025 AG Guidance document exists (https://www.mass.gov/doc/guidance-with-respect-to-unfair-and-deceptive-fees-07292025/download) and elaborates on telephone-cancellation voicemail rules; it should be consulted alongside the regulation text.",
+    "last_reviewed": "2026-06-26"
+  },
+  {
+    "state": "Minnesota",
+    "code": "MN",
+    "statutes": [
+      {
+        "citation": "Minn. Stat. §§ 325G.56–325G.63",
+        "effective": "January 1, 2025; applies to contracts entered into, modified, or renewed on or after that date. Enacted by 2024 Minn. Laws ch. 114, art. 3, §§ 55–62.",
+        "source_url": "https://www.revisor.mn.gov/statutes/cite/325G.56"
+      },
+      {
+        "citation": "2024 Minn. Laws ch. 114, art. 3 (Session Law — primary enacting text)",
+        "effective": "January 1, 2025",
+        "source_url": "https://www.revisor.mn.gov/laws/2024/0/114/"
+      }
+    ],
+    "requirements": [
+      {
+        "id": "mn-pre-purchase-offer-terms",
+        "category": "disclosure_before_purchase",
+        "requirement_text": "Before a consumer accepts an offer for an indefinite subscription agreement, the seller must present the 'offer terms' in a clear and conspicuous manner in visual proximity to the offer's proposal (or in temporal proximity for voice offers). 'Offer terms' must include: (1) that the agreement continues until the consumer terminates it; (2) the cancellation policy; (3) the recurring charges to be billed, and that the amount may change if applicable; (4) the length of the automatic renewal term or that service is continuous; and (5) any minimum purchase obligation.",
+        "applies_when": {
+          "always_if_auto_renew": true,
+          "online_signup": false,
+          "free_trial": false,
+          "long_term_or_annual": false,
+          "consumer_facing": true
+        },
+        "statute_ref": "Minn. Stat. § 325G.57, Subd. 1 (definitions of 'offer terms' at § 325G.56, Subd. 7)",
+        "source_url": "https://www.revisor.mn.gov/statutes/cite/325G.57"
+      },
+      {
+        "id": "mn-post-acceptance-confirmation",
+        "category": "acknowledgment_confirmation",
+        "requirement_text": "In a timely manner after the consumer accepts an indefinite subscription agreement offer, the seller must provide a confirmation in a manner capable of being retained by the consumer. The confirmation must contain: (1) all offer terms; (2) if the offer includes a free trial, instructions on how to cancel before any obligation to pay arises; and (3) easy-to-use, cost-effective, and timely termination options — including, if the offer was made through an online website, a § 325G.60 termination election, and, if the consumer signed up by any means other than toll-free phone, email, or postal address, an option at least as easy to use as the initial sign-up method. Communication by email satisfies this requirement.",
+        "applies_when": {
+          "always_if_auto_renew": true,
+          "online_signup": false,
+          "free_trial": false,
+          "long_term_or_annual": false,
+          "consumer_facing": true
+        },
+        "statute_ref": "Minn. Stat. § 325G.57, Subd. 2",
+        "source_url": "https://www.revisor.mn.gov/statutes/cite/325G.57"
+      },
+      {
+        "id": "mn-affirmative-consent-unconditional-gift",
+        "category": "affirmative_consent",
+        "requirement_text": "Any physical good sent to a consumer under an indefinite subscription agreement without first obtaining the consumer's affirmative consent to the agreement in accordance with § 325G.57 is an unconditional gift. The consumer may use or dispose of the good in any manner without any obligation to the seller, including any obligation relating to shipping. This provision establishes that affirmative consent — through the § 325G.57 offer-presentation and acceptance process — is a prerequisite to charging a consumer for goods.",
+        "applies_when": {
+          "always_if_auto_renew": true,
+          "online_signup": false,
+          "free_trial": false,
+          "long_term_or_annual": false,
+          "consumer_facing": true
+        },
+        "statute_ref": "Minn. Stat. § 325G.61",
+        "source_url": "https://www.revisor.mn.gov/statutes/cite/325G.61"
+      },
+      {
+        "id": "mn-website-termination-election",
+        "category": "cancellation_mechanism",
+        "requirement_text": "If a seller has a website with profile or subscription management capabilities, that website must include a 'termination election' — a simple and easily accessible means for a consumer to quickly provide notice of termination. The termination election must: be clear and conspicuous; use plain language stating any consumer may use it to terminate at any time; require only information necessary to process the termination; include a checkbox, submission button, or similarly simple mechanism; and not include undue complexity, confusion, or misrepresentation by the seller. This requirement applies regardless of the consumer's initial sign-up method.",
+        "applies_when": {
+          "always_if_auto_renew": false,
+          "online_signup": true,
+          "free_trial": false,
+          "long_term_or_annual": false,
+          "consumer_facing": true
+        },
+        "statute_ref": "Minn. Stat. § 325G.60, Subd. 2",
+        "source_url": "https://www.revisor.mn.gov/statutes/cite/325G.60"
+      },
+      {
+        "id": "mn-consumer-termination-rights",
+        "category": "cancellation_mechanism",
+        "requirement_text": "A consumer may terminate an indefinite subscription agreement at any time by following the procedure set forth in the post-acceptance confirmation. For automatic renewal (definite term) agreements: termination is effective at the end of the term in which notice is provided, unless the consumer specifies a later term. For continuous service agreements: termination must take effect no later than 31 days after verified consumer notice, or on a future date if the consumer specifies one. If the seller failed to provide the required post-acceptance confirmation or the required annual continuous-service notice, the consumer may terminate by any reasonable means (mail, email, phone, online option, or initial sign-up method) at no cost to the consumer.",
+        "applies_when": {
+          "always_if_auto_renew": false,
+          "online_signup": true,
+          "free_trial": false,
+          "long_term_or_annual": false,
+          "consumer_facing": true
+        },
+        "statute_ref": "Minn. Stat. § 325G.59, Subds. 1–3",
+        "source_url": "https://www.revisor.mn.gov/statutes/cite/325G.59"
+      },
+      {
+        "id": "mn-no-abusive-save-tactics-on-cancellation",
+        "category": "cancellation_mechanism",
+        "requirement_text": "Once a seller receives a consumer's notice of cancellation or termination, the seller is prohibited from: (1) making any misrepresentation or using any unfair or abusive tactic to delay or avoid the cancellation; or (2) making or providing save offers (additional benefits, contract modifications, gifts, or similar inducements) until the seller has separately obtained the consumer's permission — where that permission must be granted after the cancellation notice, may only be solicited once per cancellation attempt, and is limited to that single attempt. A seller may still: ask the reasons for cancellation (provided an answer is not a condition of cancellation); inform the consumer of consequences of cancelling; verify identity; or describe options to maintain a relationship such as downgrading, pausing, or suspending the subscription.",
+        "applies_when": {
+          "always_if_auto_renew": true,
+          "online_signup": false,
+          "free_trial": false,
+          "long_term_or_annual": false,
+          "consumer_facing": true
+        },
+        "statute_ref": "Minn. Stat. § 325G.58, Subd. 4 (exceptions at Subd. 5)",
+        "source_url": "https://www.revisor.mn.gov/statutes/cite/325G.58"
+      },
+      {
+        "id": "mn-continuous-service-annual-notice",
+        "category": "renewal_reminder_notice",
+        "requirement_text": "For indefinite subscription agreements subject to continuous service — meaning agreements that continue until the consumer terminates, with no definite end term — the seller must provide the consumer with written notice at least once per calendar year, delivered by mail or email. The notice must include the terms of the service and how to terminate or manage the service. Note: this annual notice requirement applies specifically to continuous service agreements. The statute does not impose a comparable periodic pre-renewal reminder for definite-term automatic renewal agreements.",
+        "applies_when": {
+          "always_if_auto_renew": true,
+          "online_signup": false,
+          "free_trial": false,
+          "long_term_or_annual": true,
+          "consumer_facing": true
+        },
+        "statute_ref": "Minn. Stat. § 325G.57, Subd. 5",
+        "source_url": "https://www.revisor.mn.gov/statutes/cite/325G.57"
+      },
+      {
+        "id": "mn-free-trial-confirmation-notice",
+        "category": "free_trial_conversion_notice",
+        "requirement_text": "Two distinct free trial obligations exist. First, for any indefinite subscription offer that includes a free trial (of any length), the post-acceptance confirmation must include information on how to cancel the free trial before the consumer pays or becomes obligated to pay (§ 325G.57, Subd. 2(2)). Second, for free trials lasting MORE THAN 30 days, the seller must send a separate advance notice no fewer than 5 days and no more than 30 days before the end of the free trial, informing the consumer of their option to cancel before the trial ends to avoid any obligation to pay for goods or services (§ 325G.57, Subd. 4). The 5-to-30-day notice applies only when the free trial exceeds 30 days.",
+        "applies_when": {
+          "always_if_auto_renew": true,
+          "online_signup": false,
+          "free_trial": true,
+          "long_term_or_annual": false,
+          "consumer_facing": true
+        },
+        "statute_ref": "Minn. Stat. § 325G.57, Subds. 2(2) and 4",
+        "source_url": "https://www.revisor.mn.gov/statutes/cite/325G.57"
+      },
+      {
+        "id": "mn-material-change-notice",
+        "category": "price_change_notice",
+        "requirement_text": "Upon any material change in the terms of an indefinite subscription agreement (including changes to pricing, charges, or material conditions), the seller must — prior to implementing the change — provide the consumer with a clear and conspicuous notice of the material change and information on how to terminate the agreement, in a form capable of being retained by the consumer. A material change implemented in violation of this requirement is void and unenforceable. The 'offer terms' definition also requires upfront disclosure that recurring charges may change and the amount to which they will change if known.",
+        "applies_when": {
+          "always_if_auto_renew": true,
+          "online_signup": false,
+          "free_trial": false,
+          "long_term_or_annual": false,
+          "consumer_facing": true
+        },
+        "statute_ref": "Minn. Stat. § 325G.57, Subd. 3 (offer terms definition at § 325G.56, Subd. 7(3))",
+        "source_url": "https://www.revisor.mn.gov/statutes/cite/325G.57"
+      }
+    ],
+    "penalty": "Civil penalties up to $25,000 per violation, recoverable by the Minnesota Attorney General under Minn. Stat. § 8.31, Subd. 3(b) (cited at https://www.revisor.mn.gov/statutes/cite/8.31). Private right of action also available: injured consumers may sue for actual damages plus costs, investigation expenses, and reasonable attorney's fees under § 8.31, Subd. 3a. Injunctive relief is additionally available. Good faith safe harbor: under Minn. Stat. § 325G.63, a seller is not subject to civil penalties if the seller made a good faith effort to comply with each applicable provision of §§ 325G.56–325G.61 (https://www.revisor.mn.gov/statutes/cite/325G.63). Caution: § 8.31's express $25,000 civil penalty provision references laws listed in Subd. 1 of that section; §§ 325G.56–63 are not expressly enumerated there. The AG may also enforce via the Prevention of Consumer Fraud Act (§§ 325F.68–70), which is listed in § 8.31 Subd. 1 and provides the same penalty mechanism. The precise penalty pathway for §§ 325G.56–63 violations may require further clarification by the AG or courts.",
+    "enforcement_notes": "No known Minnesota AG enforcement actions specifically under Minn. Stat. §§ 325G.56–325G.63 have been publicly reported as of June 2026; the law has been in effect only since January 1, 2025. No class actions specifically under the MN statute have been identified in public sources reviewed. General industry context (Faegre Drinker, January 2025: https://www.faegredrinker.com/en/insights/publications/2025/1/new-year-new-regulations-2025-brings-significant-developments-to-federal-and-state-automatic-renewal-laws) notes that auto-renewal enforcement nationally has produced seven- and eight-figure settlements, and that both the plaintiff class action bar and government regulators are active. The MN AG has broad investigative authority under § 8.31. The law's prohibition on 'save' offers without consumer permission after a cancellation request is identified by practitioners as a distinctive and potentially closely-watched enforcement risk under the MN statute.",
+    "caveats": "1. Effective date scope: The statute applies to contracts 'entered into, modified, or renewed' on or after January 1, 2025 (2024 Minn. Laws ch. 114, art. 3). Contracts entered before that date but renewed after it are covered. 2. 'Good faith effort' safe harbor (§ 325G.63): The statutory text provides no definition or factors for what constitutes a 'good faith effort.' Its scope has not yet been interpreted by courts or the MN AG. 3. Civil penalty mechanism: Section 325G.63 references 'civil penalties' without expressly specifying the authorizing statute or amount. The $25,000 figure comes from § 8.31 Subd. 3(b), but that provision's express list in Subd. 1 does not include §§ 325G.56–63. The AG may enforce through the Consumer Fraud Act pathway or under general authority; practitioners should monitor for AG guidance. 4. Annual renewal reminder for definite-term auto-renewals: Unlike some other states, MN's § 325G.57 Subd. 5 annual notice applies only to 'continuous service' (no definite end date), NOT to annual or other definite-term automatic renewal agreements. Scanners should not apply this requirement to monthly or annual subscriptions that renew at end of a definite term. 5. Free trial threshold: The advance pre-conversion notice under § 325G.57 Subd. 4 is triggered only when the free trial lasts MORE THAN 30 days; a 30-day free trial does not trigger it. 6. Broad exemptions: § 325G.62 exempts: contracts governed by another statute specifically targeting auto-renewal; certain licensed insurance entities; DLI-licensed technology system contractors; PUC/FCC/FERC-regulated services; and FINRA/SEC/MN Securities Act registrants. 7. No case law or AG guidance as of June 2026: The law is new and untested; all interpretive positions above derive from the statutory text, legislative history (the enrolled bill), and secondary law-firm commentary.",
+    "last_reviewed": "2026-06-26"
+  },
+  {
+    "state": "Utah",
+    "code": "UT",
+    "statutes": [
+      {
+        "citation": "Utah Code §§ 13-70-101, 13-70-201, 13-70-301 (Automatic Renewal Contracts Act, HB 174, Chapter 132, 2024 General Session)",
+        "effective": "January 1, 2025",
+        "source_url": "https://le.utah.gov/~2024/bills/static/HB0174.html"
+      },
+      {
+        "citation": "Utah Code §§ 13-70-101, 13-70-301 amended by Chapter 95, 2026 General Session (definitions expanded; enforcement remedies and order-violation penalty added)",
+        "effective": "May 6, 2026",
+        "source_url": "https://le.utah.gov/xcode/Title13/Chapter70/C13-70-S101_2026050620260506.html"
+      }
+    ],
+    "requirements": [
+      {
+        "id": "ut-renewal-reminder-notice",
+        "category": "renewal_reminder_notice",
+        "requirement_text": "A person who provides an individual a product or service under a contract with an automatic renewal provision (i.e., a provision that renews at the end of a definite paid term for a subsequent paid term longer than 45 days) must provide a notice to the individual at least 30 but not more than 60 days before the day on which the automatic renewal provision renews. The notice must clearly and conspicuously disclose: (a) the date on which the automatic renewal provision renews [subsection (a) not fully extracted in text rendering but confirmed by multiple secondary sources]; (b) the total renewal cost; and (c) options for cancellation of the contract. 'Clearly and conspicuously disclose' is defined in § 13-70-101(2) as disclosure in larger font, contrasting type/font/color, or marks that clearly call attention to the language, or through audio in volume and cadence readily audible and understandable. A contract provision that violates this requirement is void (§ 13-70-201(4)). This requirement does not apply to entities listed in § 13-70-201(3): entities regulated under Title 31A Insurance Code or affiliates; persons providing a service contract under § 31A-6a-101; financial institutions regulated under Title V of Gramm-Leach-Bliley Act (15 U.S.C. § 6801 et seq.) or their affiliates; public utilities as defined in § 54-2-1; entities providing services regulated by the FCC, FERC, or Federal Professional Services Council or their affiliates; parties to a rental agreement; or parties to a property management agreement under § 61-2f-102.",
+        "applies_when": {
+          "always_if_auto_renew": true,
+          "online_signup": false,
+          "free_trial": false,
+          "long_term_or_annual": false,
+          "consumer_facing": true
+        },
+        "statute_ref": "Utah Code § 13-70-201(1); § 13-70-101(1)-(2)",
+        "source_url": "https://le.utah.gov/xcode/Title13/Chapter70/C13-70-S201_2025010120240501.html"
+      },
+      {
+        "id": "ut-trial-conversion-notice",
+        "category": "free_trial_conversion_notice",
+        "requirement_text": "A person who provides an individual a 'trial period offer' (defined in § 13-70-101(5) as an offer to provide a period of time to sample or use a product or service without payment — meaning genuinely free, not discounted or introductory pricing) must provide a notice to the individual at least three days before the day on which the trial period offer expires. The notice must clearly and conspicuously disclose: (a) the trial period offer expiration date; (b) the price to be charged for the product or service, or any further purchase obligations to be imposed on the individual, after the expiration date; and (c) options for cancellation of the contract. The same exemptions listed in § 13-70-201(3) apply to this requirement.",
+        "applies_when": {
+          "always_if_auto_renew": true,
+          "online_signup": false,
+          "free_trial": true,
+          "long_term_or_annual": false,
+          "consumer_facing": true
+        },
+        "statute_ref": "Utah Code § 13-70-201(2); § 13-70-101(5)",
+        "source_url": "https://le.utah.gov/xcode/Title13/Chapter70/C13-70-S201_2025010120240501.html"
+      }
+    ],
+    "penalty": "Administrative fine of up to $2,500 per violation imposed by the Division of Consumer Protection director (§ 13-70-301(2)(a)). In a civil action brought by the Division, the court may impose a civil penalty of up to $2,500 per violation (§ 13-70-301(3)(e)), plus potential disgorgement, injunction, declaratory relief, attorney fees, and investigative fees (§ 13-70-301(3)-(4)). A person who violates an administrative or court order issued under the chapter is subject to a separate civil penalty of up to $5,000 per violation (§ 13-70-301(5)(a), added by Chapter 95, 2026 General Session, effective May 6, 2026). No private right of action appears in the statute — enforcement authority belongs to the Division. An automatic renewal provision that violates § 13-70-201 is void (§ 13-70-201(4)). Source: https://le.utah.gov/xcode/Title13/Chapter70/C13-70-S301_2026050620260506.html",
+    "enforcement_notes": "No publicly documented Utah Division of Consumer Protection enforcement actions under Chapter 70 have been identified as of June 2026; the law took effect January 1, 2025 and is in its first full enforcement year. No private right of action is provided in the statute, which limits class-action exposure compared to states like California. Multiple law firm surveys (Faegre Drinker, Cobalt, Wiley) note that Utah's ARCA is intentionally narrower than peer state laws — it lacks upfront pre-purchase disclosure, affirmative consent, acknowledgment/confirmation, and click-to-cancel mechanism requirements, making it one of the less burdensome state ARLs. The Wiley State Consumer Protection Series (November 2025) confirms Utah's three-day free-trial notice rule as currently operative and notes it as meaningfully shorter than Maryland's 14-day equivalent. No class-action filings tied to UT ARCA have been reported.",
+    "caveats": "1. SUBSECTION 13-70-201(1)(a): Text extraction from the le.utah.gov HTML page did not render subsection (a) of § 13-70-201(1). Multiple independent secondary sources (Faegre Drinker, Cobalt, Thompson Hine) consistently state the notice must disclose the renewal date as the first element. Readers should verify the exact text of § 13-70-201(1)(a) directly at https://le.utah.gov/xcode/Title13/Chapter70/C13-70-S201_2025010120240501.html before relying on this entry. 2. 2026 AMENDMENT: §§ 13-70-101 and 13-70-301 were amended by Chapter 95, 2026 General Session (effective May 6, 2026). The 2026 amendment to § 13-70-101 codified a detailed definition of 'clearly and conspicuously disclose.' The 2026 amendment to § 13-70-301 expanded civil action remedies and added the $5,000 per-violation penalty for order violations. Section 13-70-201 (the operative disclosure/notice requirements) has NOT been amended and remains as enacted in 2024. 3. NARROW SCOPE: The ARCA expressly applies only to contracts with paid renewal terms longer than 45 days — month-to-month subscriptions appear to fall outside its scope. Contracts covered by the listed exemptions (insurance, financial institutions, utilities, service contracts, rental/property management) are wholly excluded. 4. NO UPFRONT DISCLOSURE OR CONSENT RULES: Unlike California, Minnesota, and several other states, Utah ARCA imposes no pre-purchase disclosure obligation, no affirmative consent requirement, no acknowledgment/confirmation requirement, and no specific cancellation mechanism (click-to-cancel) mandate. Businesses subject to this law and also operating in higher-requirement states will still need to meet those states' standards. 5. ENFORCEMENT NOVELTY: As of June 2026, the law has been in effect for approximately 18 months. No published rulemaking under § 13-70-301(6) has been identified, meaning the Division has not yet issued clarifying regulations. Interpretive uncertainty exists on edge cases (e.g., what constitutes a sufficient 'option for cancellation' disclosure).",
+    "last_reviewed": "2026-06-26"
+  },
+  {
+    "state": "Virginia",
+    "code": "VA",
+    "statutes": [
+      {
+        "citation": "Va. Code Ann. §§ 59.1-207.45 through 59.1-207.49 (Title 59.1, Chapter 17.8 — Automatic Renewal Offers and Continuous Service Offers)",
+        "effective": "January 1, 2019 (2018, c. 704)",
+        "source_url": "https://law.lis.virginia.gov/vacodefull/title59.1/chapter17.8/"
+      },
+      {
+        "citation": "2024 Va. Acts (HB 744), amending Va. Code Ann. § 59.1-207.46 — added notice requirement for automatic renewal terms extending beyond 12 months and expanded 'consumer' definition to include small businesses",
+        "effective": "July 1, 2024",
+        "source_url": "https://legiscan.com/VA/text/HB744/id/2908822"
+      },
+      {
+        "citation": "2025 Va. Acts (HB 1022 / SB 493), amending Va. Code Ann. §§ 59.1-200 and 59.1-207.45 through 59.1-207.49 — channel-symmetry cancellation mandate, updated 'clear and conspicuous' definition for electronic platforms, replacement of 'supplier' with 'seller', elimination of good-faith compliance defense, modification of exemptions",
+        "effective": "July 1, 2026",
+        "source_url": "https://legiscan.com/VA/text/SB493/id/3322983"
+      }
+    ],
+    "requirements": [
+      {
+        "id": "va-disclosure-before-purchase",
+        "category": "disclosure_before_purchase",
+        "requirement_text": "Section 59.1-207.46(A)(1) prohibits a seller from failing, prior to completion of the initial order for an automatic renewal or continuous service, to present the automatic renewal offer terms or continuous service offer terms clearly and conspicuously before the consumer becomes obligated on the offer, and in visual proximity — or, for voice offers, in temporal proximity — to the request for the consumer's consent. 'Automatic renewal offer terms' as defined in § 59.1-207.45 must include: (1) that the subscription continues until the consumer cancels; (2) the cancellation policy; (3) the recurring charges, including whether and to what amount they may change; (4) the length of the renewal term or that service is continuous; and (5) any minimum purchase obligation. Effective July 1, 2026 (HB 1022/SB 493), the definition of 'clear and conspicuous' is amended to add parameters specific to interactive electronic platforms such as websites and mobile applications.",
+        "applies_when": {
+          "always_if_auto_renew": true,
+          "online_signup": false,
+          "free_trial": false,
+          "long_term_or_annual": false,
+          "consumer_facing": true
+        },
+        "statute_ref": "Va. Code Ann. § 59.1-207.46(A)(1); definitions at § 59.1-207.45",
+        "source_url": "https://law.lis.virginia.gov/vacode/title59.1/chapter17.8/section59.1-207.46/"
+      },
+      {
+        "id": "va-affirmative-consent",
+        "category": "affirmative_consent",
+        "requirement_text": "Section 59.1-207.46(A)(2) prohibits a seller, prior to completion of the initial order, from charging a consumer's credit or debit card or third-party payment account for an automatic renewal or continuous service without first obtaining the consumer's affirmative consent to the agreement containing the automatic renewal offer terms or continuous service offer terms. This prohibition applies to the initial charge; the consumer must affirmatively agree before any charge is initiated.",
+        "applies_when": {
+          "always_if_auto_renew": true,
+          "online_signup": false,
+          "free_trial": false,
+          "long_term_or_annual": false,
+          "consumer_facing": true
+        },
+        "statute_ref": "Va. Code Ann. § 59.1-207.46(A)(2)",
+        "source_url": "https://law.lis.virginia.gov/vacode/title59.1/chapter17.8/section59.1-207.46/"
+      },
+      {
+        "id": "va-acknowledgment-confirmation",
+        "category": "acknowledgment_confirmation",
+        "requirement_text": "Section 59.1-207.46(A)(3) prohibits a seller from failing to provide an acknowledgment that includes the automatic renewal or continuous service offer terms, the cancellation policy, and information regarding how to cancel, in a manner capable of being retained by the consumer. Where the offer includes a free trial, the acknowledgment must additionally disclose how to cancel the free trial before the consumer pays or becomes obligated to pay for the goods or services. The acknowledgment must be provided to all consumers, not only those who sign up online.",
+        "applies_when": {
+          "always_if_auto_renew": true,
+          "online_signup": false,
+          "free_trial": false,
+          "long_term_or_annual": false,
+          "consumer_facing": true
+        },
+        "statute_ref": "Va. Code Ann. § 59.1-207.46(A)(3)",
+        "source_url": "https://law.lis.virginia.gov/vacode/title59.1/chapter17.8/section59.1-207.46/"
+      },
+      {
+        "id": "va-cancellation-mechanism",
+        "category": "cancellation_mechanism",
+        "requirement_text": "Section 59.1-207.46(B) requires a seller making automatic renewal or continuous service offers to provide a toll-free telephone number, an electronic mail address, a postal address (only when the seller directly bills the consumer), or another cost-effective, timely, and easy-to-use cancellation mechanism described in the acknowledgment. A seller offering through an online website must separately make available a conspicuous online option to cancel a recurring purchase. Effective July 1, 2026 (HB 1022/SB 493 amendment), the statute imposes channel-symmetry: the seller must provide a 'simple' cancellation mechanism through each channel used for enrollment, and each such cancellation mechanism must be at least as easy to use as the corresponding sign-up method. The prior good-faith compliance defense is eliminated as of that date.",
+        "applies_when": {
+          "always_if_auto_renew": false,
+          "online_signup": true,
+          "free_trial": false,
+          "long_term_or_annual": false,
+          "consumer_facing": true
+        },
+        "statute_ref": "Va. Code Ann. § 59.1-207.46(B); as amended effective July 1, 2026 by 2025 Va. Acts (HB 1022/SB 493)",
+        "source_url": "https://law.lis.virginia.gov/vacode/title59.1/chapter17.8/section59.1-207.46/"
+      },
+      {
+        "id": "va-renewal-reminder-notice",
+        "category": "renewal_reminder_notice",
+        "requirement_text": "As added by 2024 Va. Acts (HB 744, effective July 1, 2024), § 59.1-207.46 requires that where an automatic renewal term extends beyond 12 months, the seller must provide advance notice to the consumer before the renewal deadline. The notice must disclose: (1) that the subscription or purchasing agreement will automatically renew unless the consumer cancels; (2) the deadline by which the consumer must cancel to avoid renewal; (3) the method by which the consumer may cancel; and (4) the renewal terms. Multiple secondary sources report the required notice window as 30 to 60 days before the renewal deadline; the exact day-range should be verified against the amended primary statutory text (see caveat).",
+        "applies_when": {
+          "always_if_auto_renew": true,
+          "online_signup": false,
+          "free_trial": false,
+          "long_term_or_annual": true,
+          "consumer_facing": true
+        },
+        "statute_ref": "Va. Code Ann. § 59.1-207.46, as amended by 2024 Va. Acts (HB 744)",
+        "source_url": "https://law.lis.virginia.gov/vacodefull/title59.1/chapter17.8/"
+      },
+      {
+        "id": "va-free-trial-conversion-notice",
+        "category": "free_trial_conversion_notice",
+        "requirement_text": "Section 59.1-207.46(A)(3) requires that where an offer includes a free trial, the required post-enrollment acknowledgment must specifically disclose how the consumer may cancel the free trial before the consumer pays or becomes obligated to pay for the goods or services. This disclosure is required in the acknowledgment (which must be retainable by the consumer), in addition to the general cancellation policy and cancellation instructions already required in the acknowledgment for all automatic renewal offers.",
+        "applies_when": {
+          "always_if_auto_renew": true,
+          "online_signup": false,
+          "free_trial": true,
+          "long_term_or_annual": false,
+          "consumer_facing": true
+        },
+        "statute_ref": "Va. Code Ann. § 59.1-207.46(A)(3)",
+        "source_url": "https://law.lis.virginia.gov/vacode/title59.1/chapter17.8/section59.1-207.46/"
+      }
+    ],
+    "penalty": "Violations of Chapter 17.8 constitute prohibited practices under the Virginia Consumer Protection Act (VCPA), Va. Code Ann. § 59.1-200, subject to the enforcement provisions of §§ 59.1-196 et seq. Civil penalty: up to $2,500 per willful violation under § 59.1-206, recoverable by the Attorney General, attorney for the Commonwealth, or local attorney for the county, city, or town; up to $5,000 per willful second-or-subsequent violation of enumerated VCPA subdivisions. Private right of action (§ 59.1-204): actual damages or $500, whichever is greater; treble damages up to 3× actual damages or $1,000 minimum for willful violations; plus reasonable attorney fees and court costs. Gift remedy (§ 59.1-207.47): goods or products sent to a consumer under a continuous service agreement or automatic renewal without required affirmative consent are deemed an unconditional gift — the consumer has no obligation to return or pay for them. Sources: https://law.lis.virginia.gov/vacode/59.1-206/ ; https://law.lis.virginia.gov/vacode/59.1-204/ ; https://law.lis.virginia.gov/vacode/title59.1/chapter17.8/section59.1-207.49/ ; https://law.lis.virginia.gov/vacode/title59.1/chapter17.8/section59.1-207.47/",
+    "enforcement_notes": "No specific AG enforcement actions or certified class-action suits targeting Virginia Chapter 17.8 specifically were identified in this research session as of June 2026. The 2026 HB 1022/SB 493 amendments took effect July 1, 2026 — one day after this research date — so enforcement posture under the amended statute (including the eliminated good-faith defense and the channel-symmetry mandate) is not yet documented. Greenberg Traurig's May 2026 client alert (republished in National Law Review, June 26, 2026) flagged the channel-symmetry cancellation requirement and the removal of the good-faith defense as the primary new compliance risks. See: https://natlawreview.com/article/virginia-enacts-automatic-renewal-consumer-protection-law and https://www.gtlaw.com/en/insights/2026/5/virginia-enacts-automatic-renewal-consumer-protection-law",
+    "caveats": "(1) Section 59.1-207.46(C), which addresses material changes in automatic renewal or continuous service offer terms, was partially retrieved from the primary statute (confirming a 'material change' provision exists) but its complete text was not confirmed in this session. A price_change_notice requirement may exist in that subsection; it is OMITTED here rather than fabricated. Direct verification against the current text at law.lis.virginia.gov is recommended before treating price-change notice as absent. (2) The 30-to-60-day renewal notice window for long-term contracts (terms extending beyond 12 months) under HB 744 is reported in multiple secondary source summaries but was not confirmed verbatim from the primary amended statute text; the existence of a pre-renewal notice requirement for such terms is confirmed, but the exact day-range should be verified against the live statute. (3) The HB 1022/SB 493 amendments take effect July 1, 2026; as of June 26, 2026 the authoritative text at law.lis.virginia.gov may not yet reflect the 2026 changes — confirm against the enrolled bill or Virginia Acts of Assembly. (4) Virginia's law unusually applies to some B2B transactions: the definition of 'consumer' in § 59.1-207.45 explicitly includes 'small businesses' as defined therein. Most peer state auto-renewal laws are B2C only. (5) Several categories of entities are exempt under § 59.1-207.48, including suppliers or affiliates operating under a franchise issued by a political subdivision, certain entities regulated by state agencies, insurers regulated under Title 38.2, and health clubs registered under the Virginia Health Club Act (§ 59.1-294 et seq.). The 2026 amendment narrows some of these exemptions; verify applicability for any regulated-industry entity. (6) 'Automatic renewal' under § 59.1-207.45 is defined to require a subsequent term of more than one month — monthly-to-monthly renewals are covered; the statute is not limited to annual contracts.",
+    "last_reviewed": "2026-06-26"
+  },
+  {
+    "state": "Tennessee",
+    "code": "TN",
+    "statutes": [
+      {
+        "citation": "T.C.A. § 47-18-133 (Tennessee Consumer Protection Act, automatic renewal of subscription services)",
+        "effective": "January 2023 (original enactment); amended by 2024 Tenn. Pub. Acts (SB 1894), signed May 1, 2024, effective July 1, 2024, applicable to contracts entered into, modified, or renewed on or after that date",
+        "source_url": "https://codes.findlaw.com/tn/title-47-commercial-instruments-and-transactions/tn-code-sect-47-18-133/"
+      },
+      {
+        "citation": "T.C.A. § 47-18-103 (definitions including 'clear and conspicuous,' incorporated by § 47-18-133)",
+        "effective": "In force as part of the Consumer Protection Act of 1977; relevant definition referenced in § 47-18-133 obligations",
+        "source_url": "https://www.butlersnow.com/news-and-events/how-to-get-cancelled-an-overview-of-new-rules-affecting-businesses-offering-subscription-services-to-tennessee-consumers"
+      }
+    ],
+    "requirements": [
+      {
+        "id": "tn-pre-purchase-disclosure",
+        "category": "disclosure_before_purchase",
+        "requirement_text": "T.C.A. § 47-18-133(a)(1) requires that a business making an automatic renewal or continuous service offer to a Tennessee consumer present the offer terms in a clear and conspicuous manner before the subscription or purchasing agreement is fulfilled, in visual proximity (or, for voice offers, temporal proximity) to the request for consent. Per T.C.A. § 47-18-103, visual terms are clear and conspicuous when larger than surrounding text, in contrasting type/font/color, or set off by symbols; audible terms must be in a volume and cadence sufficiently audible and understandable. Required offer-term disclosures include: a description of the cancellation policy; an explanation of recurring charges and whether those charges will change; the length of the subscription; any minimum purchase obligation; and that the subscription continues until the consumer cancels it.",
+        "applies_when": {
+          "always_if_auto_renew": true,
+          "online_signup": false,
+          "free_trial": false,
+          "long_term_or_annual": false,
+          "consumer_facing": true
+        },
+        "statute_ref": "T.C.A. § 47-18-133(a)(1); T.C.A. § 47-18-103 (clear-and-conspicuous definition)",
+        "source_url": "https://codes.findlaw.com/tn/title-47-commercial-instruments-and-transactions/tn-code-sect-47-18-133/"
+      },
+      {
+        "id": "tn-affirmative-consent",
+        "category": "affirmative_consent",
+        "requirement_text": "T.C.A. § 47-18-133(a)(2) requires a business to obtain the consumer's affirmative consent to the agreement containing automatic renewal or continuous service offer terms—including any terms at a promotional or discounted price—before charging the consumer's credit or debit card or a third-party account. Effective July 1, 2024, SB 1894 added a statutory definition: 'affirmative consent' means a clear, affirmative act signifying the consumer's freely given, specific, informed, and unambiguous agreement to the offer terms, and includes a written statement (including one written by electronic means) or an unambiguous affirmative action. A seller that fails to obtain the required affirmative consent must refund the charge to the consumer upon request, provided the request is made within 7 days of the charge.",
+        "applies_when": {
+          "always_if_auto_renew": true,
+          "online_signup": false,
+          "free_trial": false,
+          "long_term_or_annual": false,
+          "consumer_facing": true
+        },
+        "statute_ref": "T.C.A. § 47-18-133(a)(2); definition of 'affirmative consent' added by 2024 Tenn. Pub. Acts (SB 1894), eff. July 1, 2024",
+        "source_url": "https://codes.findlaw.com/tn/title-47-commercial-instruments-and-transactions/tn-code-sect-47-18-133/"
+      },
+      {
+        "id": "tn-acknowledgment-confirmation",
+        "category": "acknowledgment_confirmation",
+        "requirement_text": "T.C.A. § 47-18-133(a)(3) requires a business to provide the consumer with an acknowledgment in a manner capable of being retained by the consumer. The acknowledgment must include: the automatic renewal or continuous service offer terms; the cancellation policy; and information on how to cancel. Where the offer includes a free gift or trial, the acknowledgment must also disclose how to cancel and must allow the consumer to cancel the automatic renewal or continuous service before the consumer pays for goods or services.",
+        "applies_when": {
+          "always_if_auto_renew": true,
+          "online_signup": false,
+          "free_trial": false,
+          "long_term_or_annual": false,
+          "consumer_facing": true
+        },
+        "statute_ref": "T.C.A. § 47-18-133(a)(3)",
+        "source_url": "https://codes.findlaw.com/tn/title-47-commercial-instruments-and-transactions/tn-code-sect-47-18-133/"
+      },
+      {
+        "id": "tn-cancellation-mechanism-general",
+        "category": "cancellation_mechanism",
+        "requirement_text": "T.C.A. § 47-18-133(b) requires a business making an automatic renewal or continuous service offer to provide at least one of the following cancellation methods, described in the required acknowledgment: a toll-free telephone number; an electronic mail address; a postal address (if the seller directly bills the consumer); or another cost-effective, timely, and easy-to-use mechanism for cancellation. This requirement applies regardless of how the consumer signed up.",
+        "applies_when": {
+          "always_if_auto_renew": true,
+          "online_signup": false,
+          "free_trial": false,
+          "long_term_or_annual": false,
+          "consumer_facing": true
+        },
+        "statute_ref": "T.C.A. § 47-18-133(b)",
+        "source_url": "https://codes.findlaw.com/tn/title-47-commercial-instruments-and-transactions/tn-code-sect-47-18-133/"
+      },
+      {
+        "id": "tn-cancellation-mechanism-online",
+        "category": "cancellation_mechanism",
+        "requirement_text": "T.C.A. § 47-18-133(c) provides that where a business allows a consumer to accept an automatic renewal or continuous service offer online, it must also allow the consumer to terminate the automatic renewal or continuous service exclusively online. The online termination mechanism may include a pre-formatted termination email provided by the business that the consumer can send to the business without providing additional information.",
+        "applies_when": {
+          "always_if_auto_renew": false,
+          "online_signup": true,
+          "free_trial": false,
+          "long_term_or_annual": false,
+          "consumer_facing": true
+        },
+        "statute_ref": "T.C.A. § 47-18-133(c)",
+        "source_url": "https://codes.findlaw.com/tn/title-47-commercial-instruments-and-transactions/tn-code-sect-47-18-133/"
+      },
+      {
+        "id": "tn-renewal-notice-60day",
+        "category": "renewal_reminder_notice",
+        "requirement_text": "Effective July 1, 2024, T.C.A. § 47-18-133(a) as amended by SB 1894 requires that when the automatic renewal will occur more than 60 days after the consumer provides affirmative consent, the business (or the entity with the direct billing relationship with the consumer) must provide the consumer with a clear and conspicuous notice of when the consumer will be charged. The statute does not specify the required form of notice or the precise timing window for its delivery before the charge. Multiple commentators note that the trigger language is ambiguous: it could be read to require a notice before any renewal occurring more than 60 days after initial signup, or more narrowly to apply only where the initial term or free trial itself exceeds 60 days. The Cobalt LLP analysis notes this is 'the only pre-bill notice the law requires, as there is no annual or other renewal notice requirement either in the bill or existing law.'",
+        "applies_when": {
+          "always_if_auto_renew": true,
+          "online_signup": false,
+          "free_trial": false,
+          "long_term_or_annual": true,
+          "consumer_facing": true
+        },
+        "statute_ref": "T.C.A. § 47-18-133(a) as amended by 2024 Tenn. Pub. Acts (SB 1894), eff. July 1, 2024",
+        "source_url": "https://www.cobaltlaw.com/june-2024-auto-renewal-legislative-update"
+      },
+      {
+        "id": "tn-free-trial-conversion",
+        "category": "free_trial_conversion_notice",
+        "requirement_text": "T.C.A. § 47-18-133(a)(1) and (a)(3) together impose requirements where an automatic renewal or continuous service offer includes a free gift or trial. At the point of the offer, the business must include a clear and conspicuous explanation of the price that will be charged after the trial ends, or of how subscription pricing will change upon conclusion of the trial. In the acknowledgment, the business must disclose how to cancel and must allow the consumer to cancel the automatic renewal or continuous service before the consumer is required to pay for goods or services.",
+        "applies_when": {
+          "always_if_auto_renew": true,
+          "online_signup": false,
+          "free_trial": true,
+          "long_term_or_annual": false,
+          "consumer_facing": true
+        },
+        "statute_ref": "T.C.A. § 47-18-133(a)(1) and (a)(3)",
+        "source_url": "https://codes.findlaw.com/tn/title-47-commercial-instruments-and-transactions/tn-code-sect-47-18-133/"
+      },
+      {
+        "id": "tn-material-change-notice",
+        "category": "price_change_notice",
+        "requirement_text": "T.C.A. § 47-18-133(d) requires that in the event of a material change in the terms of an automatic renewal or continuous service that a consumer has accepted, the business must provide the consumer with a clear and conspicuous notice of the material change and information about how to cancel, in a manner capable of being retained by the consumer. The statute uses the phrase 'material change' without defining it; price changes and alterations to core subscription terms would typically qualify. The statute does not establish a minimum advance-notice window before the material change takes effect.",
+        "applies_when": {
+          "always_if_auto_renew": true,
+          "online_signup": false,
+          "free_trial": false,
+          "long_term_or_annual": false,
+          "consumer_facing": true
+        },
+        "statute_ref": "T.C.A. § 47-18-133(d)",
+        "source_url": "https://codes.findlaw.com/tn/title-47-commercial-instruments-and-transactions/tn-code-sect-47-18-133/"
+      }
+    ],
+    "penalty": "Violations of T.C.A. § 47-18-133 constitute unfair or deceptive acts or practices under the Tennessee Consumer Protection Act (T.C.A. § 47-18-101 et seq.), which is enforced by the Tennessee Attorney General (T.C.A. § 47-18-108) and through a private right of action by consumers (T.C.A. § 47-18-109). A specific statutory remedy codified by the 2024 SB 1894 amendment for failure to obtain affirmative consent is a full refund of the charge, available upon consumer request made within 7 days of the charge. Broader TCPA enforcement remedies include injunctive relief and civil penalties available to the AG for willful violations, and actual damages (which may be trebled for willful violations) plus attorney fees in private consumer actions. The sources consulted did not confirm a specific per-violation dollar cap expressly stated in § 47-18-133 itself; see T.C.A. §§ 47-18-108 through 47-18-114 for the full TCPA enforcement and penalty framework. (Cited: Cobalt LLP, June 2024 Auto Renewal Legislative Update, https://www.cobaltlaw.com/june-2024-auto-renewal-legislative-update; Butler Snow, December 2023, https://www.butlersnow.com/news-and-events/how-to-get-cancelled-an-overview-of-new-rules-affecting-businesses-offering-subscription-services-to-tennessee-consumers)",
+    "enforcement_notes": "No Tennessee-specific enforcement actions under § 47-18-133 were identified in the sources consulted as of June 2026. General multi-state enforcement context: 34 state Attorneys General reached a coordinated settlement with TFG Holdings, Inc. (operator of online subscription apparel services) for negative-option enrollment without adequate consent and for cancellation practices that frustrated consumers; states cited their respective UDAP statutes and specific negative-option laws (ZwillGen, April 2026, https://www.zwillgen.com/practical-advice/evolving-state-law-patchwork-imposes-new-obligations-on-subscription-businesses/). At the federal level, the FTC brought a case against LA Fitness in August 2025 under ROSCA for making cancellation unreasonably difficult (Kelley Drye, March 2025, https://www.kelleydrye.com/viewpoints/blogs/ad-law-access/auto-renewal-laws-2025-round-up). No Tennessee-specific class-action settlements under § 47-18-133 were identified in the sources reviewed.",
+    "caveats": "1. The 60-day renewal notice requirement added by SB 1894 (T.C.A. § 47-18-133(a), eff. July 1, 2024) is substantively ambiguous: Cobalt LLP and ZwillGen both note the statutory language does not clearly state whether it applies to any renewal occurring more than 60 days after initial signup, or only where the initial subscription term or free trial period itself exceeds 60 days. The required notice form and delivery timing are also unspecified in the statute. Practitioners should monitor AG guidance or litigation for clarification. 2. A 2025 Tennessee bill (HB0420) described in some bill-tracking sources as the 'Tennessee Consumer Protection and Subscription Renewal Act' with a potential July 1, 2025 effective date and $5,000 per-violation fines was surfaced in initial searches but could not be independently verified against the official Tennessee General Assembly site (which returned a TLS certificate error) or from any law firm alert indexed in this research. Its enactment status, scope, and exact text should be confirmed directly via wapp.capitol.tn.gov before any compliance reliance. 3. The FindLaw version of § 47-18-133 is dated 'current as of January 02, 2024' and may not reflect the full text of the July 1, 2024 SB 1894 amendments; the 2024 amendment details above are confirmed through Cobalt LLP and ZwillGen secondary sources. 4. The law applies only to 'consumers,' defined as individuals acquiring goods or services for personal, family, or household purposes (T.C.A. § 47-18-133); it does not reach B2B transactions. 5. Several industry categories are expressly exempt from § 47-18-133: FDIC-insured state or national banks (and operating subsidiaries); NCUA-insured state or federal credit unions; entities licensed by the Tennessee Department of Financial Institutions; services provided pursuant to a franchise from a Tennessee political subdivision or a TN Public Utility Commission authorization; entities regulated by the TN Public Utilities Commission, the FCC, or FERC; and businesses licensed under T.C.A. Title 56 (insurance) or their affiliates. 6. The specific per-violation civil penalty dollar cap in the broader TCPA (T.C.A. §§ 47-18-108 through -114) was not confirmed from a primary source fetched during this research and should be verified directly against the official Tennessee Code.",
+    "last_reviewed": "2026-06-26"
+  },
+  {
+    "state": "Florida",
+    "code": "FL",
+    "statutes": [
+      {
+        "citation": "Fla. Stat. §501.165 — Automatic renewal of service contracts (Title XXXIII, Ch. 501, Part I — General Provisions). Originally enacted s. 1, ch. 2010-58; amended s. 39, ch. 2011-194; last amended s. 2, ch. 2022-169.",
+        "effective": "Original enactment: ch. 2010-58 (2010). Most recent amendment: ch. 2022-169 (2022 legislative session), which added the same-manner-cancellation requirement (§501.165(2)(d)). No 2024 or 2025 amendment found; current 2024 codification reflects ch. 2022-169 as the latest change.",
+        "source_url": "https://www.flsenate.gov/Laws/Statutes/2024/0501.165"
+      },
+      {
+        "citation": "Fla. Stat. §501.2075 — Civil penalty (FDUTPA, Title XXXIII, Ch. 501, Part II — Deceptive and Unfair Trade Practices). Provides enforcement mechanism for Chapter 501 violations including §501.165.",
+        "effective": "Long-standing provision; penalty amount and structure unchanged in recent sessions.",
+        "source_url": "https://www.flsenate.gov/Laws/Statutes/2024/0501.2075"
+      }
+    ],
+    "requirements": [
+      {
+        "id": "fl-auto-renewal-disclosure",
+        "category": "disclosure_before_purchase",
+        "requirement_text": "Section 501.165(2)(a) requires that a seller who sells, leases, or offers to sell or lease any service to a consumer pursuant to a service contract that includes an automatic renewal provision shall disclose the automatic renewal provision clearly and conspicuously in the contract or contract offer. The term 'automatic renewal provision' is defined in §501.165(1)(a) as a provision under which a service contract is renewed for a specified period of more than 1 month, if the renewal causes the service contract to be in effect more than 6 months after the day of the initiation of the service contract, effective unless the consumer gives notice of an intention to terminate. 'Consumer' under §501.165(1)(b) means an individual receiving service under a service contract, excluding individuals acting in a business or governmental capacity. The statutory disclosure obligation applies at the point of sale or offer (contract or contract offer). No specific font-size or placement rules are codified in §501.165 beyond 'clearly and conspicuously.'",
+        "applies_when": {
+          "always_if_auto_renew": true,
+          "online_signup": false,
+          "free_trial": false,
+          "long_term_or_annual": false,
+          "consumer_facing": true
+        },
+        "statute_ref": "Fla. Stat. §501.165(2)(a)",
+        "source_url": "https://www.flsenate.gov/Laws/Statutes/2024/0501.165"
+      },
+      {
+        "id": "fl-renewal-reminder-notice",
+        "category": "renewal_reminder_notice",
+        "requirement_text": "Section 501.165(2)(b) requires that for service contracts with a specified term of 12 months or more that automatically renew for a specified period of more than 1 month, the seller shall provide the consumer with written or electronic notification of the automatic renewal provision. The notification must be provided no less than 30 days and no more than 60 days before the cancellation deadline under the automatic renewal provision. The notification must clearly and conspicuously state: (1) that unless the consumer cancels the contract it will automatically renew; and (2) methods by which the consumer may obtain details of the automatic renewal provision and cancellation procedure — whether by contacting the seller at a specified telephone number or address, by referring to the contract, or by any other method. Section 501.165(2)(c) provides a safe harbor: a seller does not violate §501.165(2)(b) if it demonstrates that (1) it has established and implemented written compliance procedures and enforces them as a routine business practice, (2) any failure was the result of error, and (3) as a routine business practice when error caused a failure, the unearned portion of the contract subject to the automatic renewal provision is refunded as of the date the seller is notified of the error.",
+        "applies_when": {
+          "always_if_auto_renew": true,
+          "online_signup": false,
+          "free_trial": false,
+          "long_term_or_annual": true,
+          "consumer_facing": true
+        },
+        "statute_ref": "Fla. Stat. §501.165(2)(b); §501.165(2)(c) (safe harbor)",
+        "source_url": "https://www.flsenate.gov/Laws/Statutes/2024/0501.165"
+      },
+      {
+        "id": "fl-same-manner-cancellation",
+        "category": "cancellation_mechanism",
+        "requirement_text": "Section 501.165(2)(d) — added by ch. 2022-169 — requires that a seller that enters into or renews any service contract with a consumer that includes an automatic renewal provision must allow the consumer to cancel the service contract in the same manner, and by the same means, as the consumer manifested his or her acceptance of the service contract. This provision means, for example, that a contract accepted via online signup must also be cancelable via the same online mechanism; a contract accepted by phone or in writing must be cancelable by the same channel. The statute does not prescribe a specific cancellation mechanism independent of the acceptance channel; the requirement mirrors whatever method was used for acceptance.",
+        "applies_when": {
+          "always_if_auto_renew": false,
+          "online_signup": true,
+          "free_trial": false,
+          "long_term_or_annual": false,
+          "consumer_facing": true
+        },
+        "statute_ref": "Fla. Stat. §501.165(2)(d)",
+        "source_url": "https://www.flsenate.gov/Laws/Statutes/2024/0501.165"
+      }
+    ],
+    "penalty": "Primary statutory remedy: Under §501.165(2)(f), a violation of §501.165(2) renders the automatic renewal provision void and unenforceable. Civil penalty: Under Fla. Stat. §501.2075 (FDUTPA), any person who willfully uses a method, act, or practice declared unlawful under Chapter 501, or willfully violates rules adopted under Part II of Chapter 501, is liable for a civil penalty of not more than $10,000 for each such violation. The civil penalty may be recovered in any action brought by the enforcing authority (Attorney General or State Attorney). The court or department may waive the civil penalty if the person has already made full restitution or reimbursement or paid actual damages to consumers injured by the unlawful act. The enforcing authority is entitled to reasonable attorney's fees and costs if civil penalties are assessed. The $10,000 penalty requires a finding of 'willfulness' under §501.2075; not all §501.165 disclosure failures automatically satisfy that standard. Cited: Fla. Stat. §501.165(2)(f); Fla. Stat. §501.2075 (https://www.flsenate.gov/Laws/Statutes/2024/0501.2075; https://law.justia.com/codes/florida/title-xxxiii/chapter-501/part-ii/section-501-2075/).",
+    "enforcement_notes": "No Florida-specific §501.165 Attorney General enforcement actions were identified in this research as of June 2026. Class-action activity: FloSports settled an auto-renewal class action covering Florida subscribers (among other states) for $1.55 million; the settlement received final court approval in February 2024. The class covered subscribers who enrolled between August 29, 2018, and June 15, 2023, with a Florida billing address. The case was based on auto-renewal disclosure failures under various state ARLs including Florida's. Source: https://fsrenewalsettlement.com/; https://cheermedia.com/industry/flosports-settles-automatic-renewal-lawsuit-for-1-55-million/. Auto-renewal class actions in Florida are generally structured as FDUTPA private claims under §501.211, which allows recovery of actual damages (with a practical floor developed in case law) and attorney's fees. No 2024 or 2025 Florida AG press releases specifically citing §501.165 were found.",
+    "caveats": "1. SCOPE OF 'AUTOMATIC RENEWAL PROVISION': The statutory definition (§501.165(1)(a)) has a dual threshold — the renewal must be for more than 1 month AND must cause the contract to be in effect more than 6 months after initiation. Month-to-month rolling arrangements or short initial-term contracts may fall outside the definition even if they nominally 'auto-renew.' 2. SCOPE OF 'SERVICE CONTRACT': §501.165 covers 'a written contract for the performance of services over a fixed period of time or for a specified duration' (§501.165(1)(d)). Subscription or negative-option offers not formalized as a written fixed-term service contract may not be squarely within the statute's scope, though FDUTPA's general unfair/deceptive practices prohibition could independently apply. 3. MISSING CATEGORIES: Florida §501.165 does NOT contain affirmative-consent/opt-in requirements, acknowledgment-confirmation requirements, free-trial-conversion-notice requirements, or price-change-notice requirements. Those regulatory categories are absent from Florida's auto-renewal statute as codified in the 2024 statutes (including 2025C supplements). 4. INDUSTRY EXEMPTIONS (§501.165(2)(e)): The statute explicitly exempts financial institutions (§655.005), depository institutions (12 U.S.C. §1813(c)(2)), foreign banks, their subsidiaries/affiliates, health studios (§501.0125), entities licensed under insurance chapters 624/627/634/636/641, electric utilities (§366.02), and certain government-competing private water utilities (§180.05). 5. WILLFULNESS FOR PENALTY: The $10,000 FDUTPA civil penalty under §501.2075 requires 'willful' conduct. The primary automatic consequence of a §501.165(2) violation is that the auto-renewal provision is void and unenforceable (§501.165(2)(f)), not an automatic monetary penalty. 6. AMENDMENT DATES: The ch. 2022-169 effective date (the amendment adding §501.165(2)(d)) was not independently verified to a specific calendar date in this research; Florida legislative session chapters typically take effect July 1 of the session year unless otherwise specified, but this should be confirmed against the chapter text. 7. ONLINE-SPECIFIC RULES: Florida §501.165 does not have separate online-specific disclosure or consent requirements (unlike California's ARL which has explicit online-signup provisions). The same-manner-cancellation rule (§501.165(2)(d)) achieves similar practical effect for online signups without enumerating online separately.",
+    "last_reviewed": "2026-06-26"
+  },
+  {
+    "state": "Federal (FTC / ROSCA)",
+    "code": "FED",
+    "statutes": [
+      {
+        "citation": "Restore Online Shoppers' Confidence Act (ROSCA), Pub. L. 111-345, 15 U.S.C. §§ 8401-8405",
+        "effective": "December 29, 2010. No amendments as of June 2026.",
+        "source_url": "https://www.law.cornell.edu/uscode/text/15/8401"
+      },
+      {
+        "citation": "FTC Act, 15 U.S.C. § 45 (Section 5) — enforcement vehicle for ROSCA violations",
+        "effective": "Operative; civil penalty amounts adjusted annually. Most recent operative adjustment: $53,088 per violation, effective January 17, 2025 (16 CFR § 1.98). The 2026 COLA increase was cancelled by OMB M-26-11 (April 2026), leaving the 2025 figure in effect.",
+        "source_url": "https://www.law.cornell.edu/cfr/text/16/1.98"
+      },
+      {
+        "citation": "FTC Enforcement Policy Statement Regarding Negative Option Marketing (October 29, 2021 / Federal Register November 4, 2021)",
+        "effective": "November 4, 2021. Non-binding policy statement; not a rule. Clarifies FTC Section 5 and ROSCA enforcement positions on disclosures, consent, and cancellation.",
+        "source_url": "https://www.federalregister.gov/documents/2021/11/04/2021-24094/enforcement-policy-statement-regarding-negative-option-marketing"
+      },
+      {
+        "citation": "FTC Negative Option Rule (Click-to-Cancel Rule), 16 CFR Part 425, 89 Fed. Reg. 90476 (Nov. 15, 2024) — VACATED",
+        "effective": "Vacated by the U.S. Court of Appeals for the Eighth Circuit, July 8, 2025, on procedural grounds (failure to conduct preliminary regulatory analysis as required by FTC Act § 18). The rule never took operative effect.",
+        "source_url": "https://www.sidley.com/en/insights/newsupdates/2025/07/us-ftc-click-to-cancel-rule-struck-down"
+      },
+      {
+        "citation": "FTC Advance Notice of Proposed Rulemaking (ANPRM) on Negative Option Rule, 91 Fed. Reg. (Mar. 13, 2026)",
+        "effective": "Published March 13, 2026; public comment period closed April 13, 2026. No final rule adopted as of June 2026.",
+        "source_url": "https://www.insideprivacy.com/united-states/federal-trade-commission/ftc-negative-option-rule-anprm/"
+      }
+    ],
+    "requirements": [
+      {
+        "id": "fed-rosca-8403-disclosure",
+        "category": "disclosure_before_purchase",
+        "requirement_text": "15 U.S.C. § 8403(1) makes it unlawful for any person to charge or attempt to charge any consumer for goods or services sold in an Internet transaction through a negative option feature unless the person provides text that clearly and conspicuously discloses all material terms of the transaction before obtaining the consumer's billing information. 'Negative option feature' is defined by reference to the FTC's Telemarketing Sales Rule, 16 CFR Part 310.",
+        "applies_when": {
+          "always_if_auto_renew": true,
+          "online_signup": false,
+          "free_trial": false,
+          "long_term_or_annual": false,
+          "consumer_facing": true
+        },
+        "statute_ref": "15 U.S.C. § 8403(1)",
+        "source_url": "https://www.law.cornell.edu/uscode/text/15/8403"
+      },
+      {
+        "id": "fed-rosca-8402a1-disclosure-third-party",
+        "category": "disclosure_before_purchase",
+        "requirement_text": "15 U.S.C. § 8402(a)(1) makes it unlawful for a post-transaction third party seller to charge or attempt to charge a consumer's financial account for any Internet-sold good or service unless, before obtaining the consumer's billing information, the post-transaction third party seller has clearly and conspicuously disclosed all material terms of the transaction, including: (A) a description of the goods or services offered; (B) the fact that the post-transaction third party seller is not affiliated with the initial merchant; and (C) the cost of such goods or services. This provision applies specifically to sellers who solicit purchases through another merchant after the consumer has initiated a separate transaction.",
+        "applies_when": {
+          "always_if_auto_renew": true,
+          "online_signup": false,
+          "free_trial": false,
+          "long_term_or_annual": false,
+          "consumer_facing": true
+        },
+        "statute_ref": "15 U.S.C. § 8402(a)(1)",
+        "source_url": "https://www.law.cornell.edu/uscode/text/15/8402"
+      },
+      {
+        "id": "fed-rosca-8403-express-consent",
+        "category": "affirmative_consent",
+        "requirement_text": "15 U.S.C. § 8403(2) requires that, for any Internet negative option transaction, the seller obtain a consumer's express informed consent before charging the consumer's credit card, debit card, bank account, or other financial account. The FTC's 2021 Enforcement Policy Statement elaborates that consent obtained through deceptive means (e.g., burying terms, using pre-checked boxes, or obscuring the offer) does not satisfy this requirement.",
+        "applies_when": {
+          "always_if_auto_renew": true,
+          "online_signup": false,
+          "free_trial": false,
+          "long_term_or_annual": false,
+          "consumer_facing": true
+        },
+        "statute_ref": "15 U.S.C. § 8403(2)",
+        "source_url": "https://www.law.cornell.edu/uscode/text/15/8403"
+      },
+      {
+        "id": "fed-rosca-8402a2-consent-third-party",
+        "category": "affirmative_consent",
+        "requirement_text": "15 U.S.C. § 8402(a)(2) requires that a post-transaction third party seller receive the consumer's express informed consent for a charge by: (A) obtaining from the consumer (i) the full account number of the account to be charged and (ii) the consumer's name, address, and a means to contact the consumer; and (B) requiring the consumer to perform an additional affirmative action, such as clicking a confirmation button or checking a box, indicating consent to be charged the disclosed amount. Reliance on billing information passed from the initial merchant does not satisfy this requirement.",
+        "applies_when": {
+          "always_if_auto_renew": true,
+          "online_signup": false,
+          "free_trial": false,
+          "long_term_or_annual": false,
+          "consumer_facing": true
+        },
+        "statute_ref": "15 U.S.C. § 8402(a)(2)",
+        "source_url": "https://www.law.cornell.edu/uscode/text/15/8402"
+      },
+      {
+        "id": "fed-rosca-8402b-data-pass-ban",
+        "category": "acknowledgment_confirmation",
+        "requirement_text": "15 U.S.C. § 8402(b) prohibits an initial merchant from disclosing a consumer's credit card, debit card, bank account, or other financial account number — or any other billing information used to charge the customer — to any post-transaction third party seller for use in an Internet-based sale of goods or services. This structural prohibition operates independently of whether disclosures or consent are otherwise provided.",
+        "applies_when": {
+          "always_if_auto_renew": true,
+          "online_signup": false,
+          "free_trial": false,
+          "long_term_or_annual": false,
+          "consumer_facing": true
+        },
+        "statute_ref": "15 U.S.C. § 8402(b)",
+        "source_url": "https://www.law.cornell.edu/uscode/text/15/8402"
+      },
+      {
+        "id": "fed-rosca-8403-cancellation-mechanism",
+        "category": "cancellation_mechanism",
+        "requirement_text": "15 U.S.C. § 8403(3) requires that any person charging for goods or services through an Internet negative option feature provide simple mechanisms for a consumer to stop recurring charges from being placed on the consumer's credit card, debit card, bank account, or other financial account. The statute does not specify a particular channel or medium for this mechanism; what constitutes 'simple' is informed by FTC enforcement practice. The FTC's 2021 Policy Statement indicates that practices that impede effective operation of promised cancellation procedures — such as hanging up on consumers, placing them on hold for unreasonable periods, or misrepresenting cancellation terms — are inconsistent with this requirement.",
+        "applies_when": {
+          "always_if_auto_renew": false,
+          "online_signup": true,
+          "free_trial": false,
+          "long_term_or_annual": false,
+          "consumer_facing": true
+        },
+        "statute_ref": "15 U.S.C. § 8403(3)",
+        "source_url": "https://www.law.cornell.edu/uscode/text/15/8403"
+      }
+    ],
+    "penalty": "Violations of ROSCA or any regulation prescribed under it are treated as violations of an FTC Act rule under 15 U.S.C. § 57a (FTC Act § 18), subjecting violators to civil penalties under FTC Act §§ 5(l) and 5(m)(1)(A)/(B). The maximum civil penalty is $53,088 per violation (effective January 17, 2025 per 16 CFR § 1.98, as published in 90 Fed. Reg. 7958 (Jan. 17, 2025)). Each day a violation continues may constitute a separate violation. The 2026 annual COLA inflation adjustment was cancelled by OMB Memorandum M-26-11 (April 2026), leaving the 2025 figure operative as of June 2026. Sources: 15 U.S.C. § 8404; 16 CFR § 1.98 (https://www.law.cornell.edu/cfr/text/16/1.98); Wiley Law client alert (https://www.wiley.law/alert-Automatic-Renewals-and-Risks-State-Negative-Option-Legislation-and-Enforcement-is-Trending).",
+    "enforcement_notes": "1. FTC v. Amazon.com, Inc. (ROSCA), W.D. Wash., settled September 25, 2025: Amazon agreed to pay $1 billion in civil penalties and $1.5 billion in consumer refunds ($2.5 billion total) to resolve FTC allegations that Amazon used dark patterns to enroll consumers in Prime memberships and impeded cancellation, in violation of ROSCA and FTC Act § 5. The district court's September 17, 2025 summary judgment ruling confirmed that ROSCA applies to Prime-style automatically renewing memberships and free-trial-to-paid conversions. Source: https://www.khlaw.com/insights/amazon-pay-record-25-billion-settle-ftc-claims-deceptive-prime-membership-signup-and; FTC case page: https://www.ftc.gov/legal-library/browse/cases-proceedings/2123050-amazoncom-inc-rosca-ftc-v (FTC.gov returned 403; case confirmed via secondary sources). 2. Multi-state coordination: 34 state Attorneys General announced coordinated settlements with TFG Holdings, Inc. over unlawful negative option enrollment practices. Source: https://www.wiley.law/alert-Automatic-Renewals-and-Risks-State-Negative-Option-Legislation-and-Enforcement-is-Trending. 3. California Automatic Renewal Task Force (CART): August 2025 — $7.5 million settlement with HelloFresh by LA and Santa Clara County DAs for misleading consumers into recurring subscription charges. Source: https://www.wiley.law/alert-Automatic-Renewals-and-Risks-State-Negative-Option-Legislation-and-Enforcement-is-Trending. 4. The FTC has publicly stated it will continue active ROSCA enforcement notwithstanding the vacatur of the Click-to-Cancel Rule. Source: https://www.gibsondunn.com/ftc-restarts-negative-option-rulemaking-after-eighth-circuit-vacatur-enforcement-under-rosca-continues/.",
+    "caveats": "1. CLICK-TO-CANCEL RULE VACATED: The FTC's Negative Option Rule (the 'Click-to-Cancel' rule), 16 CFR Part 425, was vacated by the Eighth Circuit on July 8, 2025 on procedural grounds and never took legal effect. Requirements that rule would have imposed — including same-medium cancellation, specific renewal reminder notices, and free-trial conversion notices codified in 16 CFR Part 425 — are NOT currently enforceable as federal rules. They are omitted from this dataset because they have no operative legal force as of June 2026. 2. ANPRM IN PROGRESS: The FTC published an ANPRM on March 13, 2026 seeking comment on whether to amend the existing Negative Option Rule. As of June 2026, no NPRM has been published and no new rule has been adopted. The ANPRM outcome is entirely uncertain. 3. PENALTY FIGURE UNCERTAINTY: The 2026 civil penalty amount is in flux. OMB M-26-11 (April 2026) cancelled the annual COLA adjustment for 2026, leaving the 2025 figure of $53,088 operative. Whether this cancellation will itself be challenged or reversed is uncertain. The $53,088 figure is confirmed by 16 CFR § 1.98 (as of January 17, 2025) and Wiley's 2026 client alert; the precise 2026 post-OMB-memo figure has not been confirmed in a verifiable FTC press release or Federal Register notice consulted directly (FTC.gov returned 403 errors during research). 4. ROSCA SCOPE LIMITS: ROSCA §8403 applies only to transactions 'effected on the Internet.' Offline negative option sales (mail, telephone, in-person) are governed by FTC Act § 5, the Telemarketing Sales Rule (16 CFR Part 310), and state law — not ROSCA directly. ROSCA §8402's post-transaction third-party seller provisions apply only to the specific scenario where a third party solicits purchases through a separate initial merchant's platform. 5. NO RENEWAL REMINDER, FREE TRIAL CONVERSION, OR PRICE CHANGE NOTICE REQUIREMENTS IN ROSCA: ROSCA §§ 8402-8403 do not expressly require advance renewal reminders, free-trial-to-paid conversion notices, or price change notices. These categories are addressed in many state auto-renewal laws but are not independently mandated by any currently operative federal statute or rule as of June 2026. They were included in the vacated Click-to-Cancel Rule but that rule has no legal force. The FTC's 2021 Policy Statement (non-binding) and general Section 5 authority could be invoked against deceptive practices in these areas, but there is no clear, operative, citable federal rule imposing specific pre-conversion or pre-renewal notice periods or content requirements. Accordingly, those requirement categories are omitted from this federal entry. 6. FTC 2021 POLICY STATEMENT: The October 2021 'Enforcement Policy Statement Regarding Negative Option Marketing' is a non-binding policy statement, not a rule. It describes FTC enforcement intentions under existing laws (Section 5, ROSCA, TSR) but does not itself create legally enforceable obligations distinct from those statutes. It is cited here for context only.",
+    "last_reviewed": "2026-06-26"
+  }
+]
